@@ -85,7 +85,7 @@ public class IntroGameController : MonoBehaviour
     public GameObject educationScreenHSDiploma;
     public GameObject educationScreenBachelorsDegree;
     public GameObject educationScreenMastersDegree;
-    public GameObject educationScreenPHDDegree;
+    public GameObject educationScreenAdvancedDegree;
 
     //Game Screens - Employment
     public GameObject jobScreen;
@@ -96,7 +96,9 @@ public class IntroGameController : MonoBehaviour
     public GameObject teacherScreen;
     public GameObject callCenterLicensedSalesScreen;
     public GameObject programmerScreen;
+    public GameObject unknownScreen;
     public GameObject doctorScreen;
+    public GameObject lawyerScreen;
 
     //Game Screens - Housing
     public GameObject housingScreen;
@@ -108,6 +110,7 @@ public class IntroGameController : MonoBehaviour
 
     //Game Screens - Transportation
     public GameObject transportationScreen;
+    public GameObject bicycleScreen;
     public GameObject usedCarScreen;
     public GameObject newCarScreen;
     public GameObject motorcycleScreen;
@@ -143,7 +146,7 @@ public class IntroGameController : MonoBehaviour
     public bool hsDiploma = false;
     public bool bachelorsDegree = false;
     public bool mastersDegree = false;
-    public bool phdDegree = false;
+    public bool advancedDegree = false;
 
     //Game Setting Variables - Employment
     public bool cashier = false;
@@ -153,16 +156,19 @@ public class IntroGameController : MonoBehaviour
     public bool callCenterCustomerService = false;
     public bool callCenterLicensedSales = false;
     public bool programmer = false;
+    public bool unknown = false;
     public bool doctor = false;
+    public bool lawyer = false;
 
     //Game Setting Variables - Housing
+    public bool livingWithParents = false;
     public bool crappyApartment = false;
     public bool basicApartment = false;
     public bool luxuryApartment = false;
     public bool ownHouse = false;
-    public bool livingWithParents = false;
 
     //Game Setting Variables - Transportation
+    public bool bicycle = false;
     public bool usedCar = false;
     public bool newCar = false;
     public bool motorcycle = false;
@@ -173,16 +179,22 @@ public class IntroGameController : MonoBehaviour
     //Game Intro Summary
     public Text summaryInitialMoney1990Text;
     public Text summaryInitialMoney2020Text;
-    public Text summaryGenderText;
-    public Text summaryRaceText;
-    public Text summaryEducationText;
-    public Text summaryJobText;
+    public Text summaryGender1990Text;
+    public Text summaryGender2020Text;
+    public Text summaryRace1990Text;
+    public Text summaryRace2020Text;
+    public Text summaryEducation1990Text;
+    public Text summaryEducation2020Text;
+    public Text summaryJob1990Text;
+    public Text summaryJob2020Text;
     public Text summaryJobPay1990Text;
     public Text summaryJobPay2020Text;
-    public Text summaryHousingText;
+    public Text summaryHousing1990Text;
+    public Text summaryHousing2020Text;
     public Text summaryHousingRent1990Text;
     public Text summaryHousingRent2020Text;
-    public Text summaryTransportationText;
+    public Text summaryTransportation1990Text;
+    public Text summaryTransportation2020Text;
     public Text summaryTransportationCost1990Text;
     public Text summaryTransportationCost2020Text;
     public Text summaryGift1990Text;
@@ -245,16 +257,22 @@ public class IntroGameController : MonoBehaviour
         //Setting Up Summary of Game Stats
         summaryInitialMoney1990Text.text = "Initial Money: $" + initialMoney1990;
         summaryInitialMoney2020Text.text = "Initial Money: $" + initialMoney2020;
-        summaryGenderText.text = "Gender Status: " + genderSelected;
-        summaryRaceText.text = "Racial Status: $" + raceSelected;
-        summaryEducationText.text = "Education Status: " + educationSelected;
-        summaryJobText.text = "Employment Status: " + jobSelected;
+        summaryGender1990Text.text = "Gender Status: " + genderSelected;
+        summaryGender2020Text.text = "Gender Status: " + genderSelected;
+        summaryRace1990Text.text = "Racial Status: $" + raceSelected;
+        summaryRace2020Text.text = "Racial Status: $" + raceSelected;
+        summaryEducation1990Text.text = "Education Status: " + educationSelected;
+        summaryEducation2020Text.text = "Education Status: " + educationSelected;
+        summaryJob1990Text.text = "Employment Status: " + jobSelected;
+        summaryJob2020Text.text = "Employment Status: " + jobSelected;
         summaryJobPay1990Text.text = " - Bi-Weekly Salary: $" + biweeklySalary1990;
         summaryJobPay2020Text.text = " - Bi-Weekly Salary: $" + biweeklySalary2020;
-        summaryHousingText.text = "Housing Status: " + housingSelected;
+        summaryHousing1990Text.text = "Housing Status: " + housingSelected;
+        summaryHousing2020Text.text = "Housing Status: " + housingSelected;
         summaryHousingRent1990Text.text = " - Monthly Rent: $" + rentCost1990;
         summaryHousingRent2020Text.text = " - Monthly Rent: $" + rentCost2020;
-        summaryTransportationText.text = "Transportation Status: " + transportationSelected;
+        summaryTransportation1990Text.text = "Transportation Status: " + transportationSelected;
+        summaryTransportation2020Text.text = "Transportation Status: " + transportationSelected;
         summaryTransportationCost1990Text.text = " - Weekly Transportation Cost: $" + transportationCost1990;
         summaryTransportationCost2020Text.text = " - Weekly Transportation Cost: $" + transportationCost2020;
         summaryGift1990Text.text = "Gift Received: $" + giftMoney;
@@ -452,7 +470,7 @@ public class IntroGameController : MonoBehaviour
             educationScreenHSDiploma.SetActive(false);
             educationScreenBachelorsDegree.SetActive(false);
             educationScreenMastersDegree.SetActive(false);
-            educationScreenPHDDegree.SetActive(false);
+            educationScreenAdvancedDegree.SetActive(false);
 
             educationSelected = "No Degree";
             educationNow = 1;
@@ -475,7 +493,7 @@ public class IntroGameController : MonoBehaviour
             educationScreenHSDiploma.SetActive(true);
             educationScreenBachelorsDegree.SetActive(false);
             educationScreenMastersDegree.SetActive(false);
-            educationScreenPHDDegree.SetActive(false);
+            educationScreenAdvancedDegree.SetActive(false);
 
             educationSelected = "High School Diploma";
             educationNow = 2;
@@ -498,7 +516,7 @@ public class IntroGameController : MonoBehaviour
             educationScreenHSDiploma.SetActive(false);
             educationScreenBachelorsDegree.SetActive(true);
             educationScreenMastersDegree.SetActive(false);
-            educationScreenPHDDegree.SetActive(false);
+            educationScreenAdvancedDegree.SetActive(false);
 
             educationSelected = "Bachelor's Degree";
             educationNow = 3;
@@ -521,7 +539,7 @@ public class IntroGameController : MonoBehaviour
             educationScreenHSDiploma.SetActive(false);
             educationScreenBachelorsDegree.SetActive(false);
             educationScreenMastersDegree.SetActive(true);
-            educationScreenPHDDegree.SetActive(false);
+            educationScreenAdvancedDegree.SetActive(false);
 
             educationSelected = "Master's Degreee";
             educationNow = 4;
@@ -536,7 +554,7 @@ public class IntroGameController : MonoBehaviour
             programmerButton.SetActive(true);
             doctorButton.SetActive(true);
         }
-        else if (phdDegree == true)
+        else if (advancedDegree == true)
         {
             //Changes Panel View
             educationScreen.SetActive(false);
@@ -544,7 +562,7 @@ public class IntroGameController : MonoBehaviour
             educationScreenHSDiploma.SetActive(false);
             educationScreenBachelorsDegree.SetActive(false);
             educationScreenMastersDegree.SetActive(false);
-            educationScreenPHDDegree.SetActive(true);
+            educationScreenAdvancedDegree.SetActive(true);
 
             educationSelected = "PhD";
             educationNow = 5;
@@ -587,7 +605,7 @@ public class IntroGameController : MonoBehaviour
 
     public void ChooseEducationPhDDegree()
     {
-        phdDegree = true;
+        advancedDegree = true;
         ChooseEducation();
     }
 
@@ -1315,7 +1333,7 @@ public class IntroGameController : MonoBehaviour
         educationScreenHSDiploma.SetActive(false);
         educationScreenBachelorsDegree.SetActive(false);
         educationScreenMastersDegree.SetActive(false);
-        educationScreenPHDDegree.SetActive(false);
+        educationScreenAdvancedDegree.SetActive(false);
 
         jobScreen.SetActive(true);
     }
