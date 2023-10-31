@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -154,7 +154,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1348958661}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -289,7 +288,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 198953320}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -426,7 +424,6 @@ RectTransform:
   m_Children:
   - {fileID: 1235013027}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -477,7 +474,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: LuxuryApartmentInfo
         m_Mode: 1
@@ -560,7 +557,6 @@ RectTransform:
   m_Children:
   - {fileID: 792427651}
   m_Father: {fileID: 2060906724}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -611,7 +607,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ActivityPayGrocery1
         m_Mode: 1
@@ -692,7 +688,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 946851521}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -830,7 +825,6 @@ RectTransform:
   - {fileID: 1038197487}
   - {fileID: 1995334568}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -908,7 +902,6 @@ RectTransform:
   m_Children:
   - {fileID: 2052467462}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -959,7 +952,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: BasicApartmentInfo
         m_Mode: 1
@@ -1040,7 +1033,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -1120,7 +1112,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 148201111}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1261,7 +1252,6 @@ RectTransform:
   - {fileID: 870962779}
   - {fileID: 1784997700}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1339,7 +1329,6 @@ RectTransform:
   m_Children:
   - {fileID: 470663608}
   m_Father: {fileID: 60248574}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -1390,7 +1379,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ChooseJobWaiter
         m_Mode: 1
@@ -1471,7 +1460,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 971633674}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1559,7 +1547,6 @@ RectTransform:
   m_Children:
   - {fileID: 1040426982}
   m_Father: {fileID: 1376938610}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -1610,7 +1597,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: Event1b
         m_Mode: 1
@@ -1691,7 +1678,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952353428}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1773,7 +1759,6 @@ RectTransform:
   - {fileID: 372861241}
   - {fileID: 636558018}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1849,7 +1834,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2060906724}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1984,7 +1968,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952353428}
-  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -2064,7 +2047,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 248200185}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2201,7 +2183,6 @@ RectTransform:
   m_Children:
   - {fileID: 52261898}
   m_Father: {fileID: 277875189}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -2252,7 +2233,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToTransportationScreen
         m_Mode: 1
@@ -2333,7 +2314,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2119779447}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2468,7 +2448,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 277875189}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2556,7 +2535,6 @@ RectTransform:
   m_Children:
   - {fileID: 1374885980}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -2607,7 +2585,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: BachelorsDegreeInfo
         m_Mode: 1
@@ -2688,7 +2666,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2138436711}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2823,7 +2800,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -2905,7 +2881,6 @@ RectTransform:
   m_Children:
   - {fileID: 12670804}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2956,7 +2931,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ActivityGrocery
         m_Mode: 1
@@ -3040,7 +3015,6 @@ RectTransform:
   - {fileID: 483446746}
   - {fileID: 1846600286}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3116,7 +3090,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -3196,7 +3169,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -3318,7 +3290,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952353428}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -3358,7 +3329,6 @@ RectTransform:
   m_Children:
   - {fileID: 294992944}
   m_Father: {fileID: 60248574}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -3409,7 +3379,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ChooseJobFryCook
         m_Mode: 1
@@ -3492,7 +3462,6 @@ RectTransform:
   m_Children:
   - {fileID: 116733461}
   m_Father: {fileID: 1026968198}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -3543,7 +3512,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -3624,7 +3593,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1674599336}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3761,7 +3729,6 @@ RectTransform:
   m_Children:
   - {fileID: 396566832}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3812,7 +3779,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: StartMonth
         m_Mode: 1
@@ -3893,7 +3860,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1154776553}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4030,7 +3996,6 @@ RectTransform:
   m_Children:
   - {fileID: 2081924252}
   m_Father: {fileID: 1348958661}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -4081,7 +4046,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ChooseHousingBasicApartment
         m_Mode: 1
@@ -4162,7 +4127,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1904144315}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4297,7 +4261,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1198449711}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4435,7 +4398,6 @@ RectTransform:
   - {fileID: 148201111}
   - {fileID: 191644801}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4513,7 +4475,6 @@ RectTransform:
   m_Children:
   - {fileID: 1458269744}
   m_Father: {fileID: 426931774}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -4564,7 +4525,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -4645,7 +4606,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 242174320}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4780,7 +4740,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 630090515}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4918,7 +4877,6 @@ RectTransform:
   - {fileID: 526647718}
   - {fileID: 1884318224}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4994,7 +4952,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1159685114}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5131,7 +5088,6 @@ RectTransform:
   m_Children:
   - {fileID: 2004821075}
   m_Father: {fileID: 1348958661}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -5182,7 +5138,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ChooseHousingCrappyApartment
         m_Mode: 1
@@ -5263,7 +5219,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1857095963}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5401,7 +5356,6 @@ RectTransform:
   - {fileID: 1109483810}
   - {fileID: 928877354}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5479,7 +5433,6 @@ RectTransform:
   m_Children:
   - {fileID: 651455438}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -5530,7 +5483,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: NoDegreeInfo
         m_Mode: 1
@@ -5613,7 +5566,6 @@ RectTransform:
   m_Children:
   - {fileID: 926609697}
   m_Father: {fileID: 708733657}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -5664,7 +5616,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -5745,7 +5697,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 86939142}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -5883,7 +5834,6 @@ RectTransform:
   - {fileID: 1159685114}
   - {fileID: 1606798617}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5959,7 +5909,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1596650378}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6096,7 +6045,6 @@ RectTransform:
   m_Children:
   - {fileID: 1791826018}
   m_Father: {fileID: 1401400957}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -6147,7 +6095,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -6228,7 +6176,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 253771696}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6365,7 +6312,6 @@ RectTransform:
   m_Children:
   - {fileID: 1363463306}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -6416,7 +6362,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: TeacherInfo
         m_Mode: 1
@@ -6500,7 +6446,6 @@ RectTransform:
   - {fileID: 1933584208}
   - {fileID: 1570677309}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6576,7 +6521,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2083087209}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6657,7 +6601,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1697367638}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -6792,7 +6735,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1444546973}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6927,7 +6869,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1983759133}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -7007,7 +6948,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 379372751}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -7145,7 +7085,6 @@ RectTransform:
   - {fileID: 281894001}
   - {fileID: 1039337715}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7221,7 +7160,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 770823857}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -7356,7 +7294,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1109483810}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7493,7 +7430,6 @@ RectTransform:
   m_Children:
   - {fileID: 480046982}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -7544,7 +7480,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: CarInfo
         m_Mode: 1
@@ -7625,7 +7561,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1502589343}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7762,7 +7697,6 @@ RectTransform:
   m_Children:
   - {fileID: 1021605443}
   m_Father: {fileID: 545728265}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -7813,7 +7747,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: Event2b
         m_Mode: 1
@@ -7894,7 +7828,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1983759133}
-  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -7974,7 +7907,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 64008101}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8109,7 +8041,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1625370458}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8246,7 +8177,6 @@ RectTransform:
   m_Children:
   - {fileID: 1948388010}
   m_Father: {fileID: 1595893351}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -8297,7 +8227,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToTransportationScreen
         m_Mode: 1
@@ -8378,7 +8308,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1144438299}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8513,7 +8442,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 449598308}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8650,7 +8578,6 @@ RectTransform:
   m_Children:
   - {fileID: 1363967228}
   m_Father: {fileID: 211142931}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -8701,7 +8628,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -8784,7 +8711,6 @@ RectTransform:
   m_Children:
   - {fileID: 1118044248}
   m_Father: {fileID: 670746349}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -8835,7 +8761,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToJobScreen
         m_Mode: 1
@@ -8916,7 +8842,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1983759133}
-  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -8996,7 +8921,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 956497174}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9131,7 +9055,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1198973487}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -9268,7 +9191,6 @@ RectTransform:
   m_Children:
   - {fileID: 1863512672}
   m_Father: {fileID: 581717297}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -9319,7 +9241,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToGiftScreen
         m_Mode: 1
@@ -9402,7 +9324,6 @@ RectTransform:
   m_Children:
   - {fileID: 1181840662}
   m_Father: {fileID: 545728265}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -9453,7 +9374,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: Event2c
         m_Mode: 1
@@ -9534,7 +9455,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1617488157}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9622,7 +9542,6 @@ RectTransform:
   m_Children:
   - {fileID: 1380855531}
   m_Father: {fileID: 1324782050}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -9673,7 +9592,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToSummaryScreen
         m_Mode: 1
@@ -9756,7 +9675,6 @@ RectTransform:
   m_Children:
   - {fileID: 798740461}
   m_Father: {fileID: 305489777}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -9807,7 +9725,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToJobScreen
         m_Mode: 1
@@ -9891,7 +9809,6 @@ RectTransform:
   - {fileID: 1514560180}
   - {fileID: 842057166}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9972,7 +9889,6 @@ RectTransform:
   - {fileID: 524332970}
   - {fileID: 1946844829}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10050,7 +9966,6 @@ RectTransform:
   m_Children:
   - {fileID: 1355747782}
   m_Father: {fileID: 1921014832}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -10101,7 +10016,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ChooseTransportationBus
         m_Mode: 1
@@ -10182,7 +10097,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 305489777}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -10319,7 +10233,6 @@ RectTransform:
   m_Children:
   - {fileID: 1729000930}
   m_Father: {fileID: 1872914101}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -10370,7 +10283,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: PayDay
         m_Mode: 1
@@ -10451,7 +10364,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -10586,7 +10498,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1477450071}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10724,7 +10635,6 @@ RectTransform:
   - {fileID: 514152394}
   - {fileID: 972931767}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10800,7 +10710,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1582334428}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10935,7 +10844,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1383466303}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -11050,7 +10958,7 @@ GameObject:
   - component: {fileID: 611292234}
   - component: {fileID: 611292235}
   m_Layer: 0
-  m_Name: IntroController
+  m_Name: IntroGameController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11063,13 +10971,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611292233}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &611292235
 MonoBehaviour:
@@ -11080,85 +10988,162 @@ MonoBehaviour:
   m_GameObject: {fileID: 611292233}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c87cad1e2f4f5d4f898fe7d34e4585d, type: 3}
+  m_Script: {fileID: 11500000, guid: 92157a9092e375a40a13f939e98891ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noDegreeButton: {fileID: 1488714882}
-  hsDiplomaButton: {fileID: 946851520}
-  bachelorsDegreeButton: {fileID: 1997725715}
-  fryCookButton: {fileID: 242174319}
-  waiterButton: {fileID: 64008100}
-  teacherButton: {fileID: 870962778}
-  callCenterAgentButton: {fileID: 2138436710}
-  programmerButton: {fileID: 1784997699}
-  crappyApartmentButton: {fileID: 325848918}
-  basicApartmentButton: {fileID: 267518704}
-  luxuryApartmentButton: {fileID: 1917076277}
-  carButton: {fileID: 1625370457}
-  motorcycleButton: {fileID: 1372274965}
-  busButton: {fileID: 560286082}
-  welcomeScreen: {fileID: 1156887298}
-  educationScreen1: {fileID: 1822757358}
-  educationScreen2: {fileID: 305489776}
-  educationScreen3: {fileID: 670746348}
-  educationScreen4: {fileID: 1697367637}
-  jobScreen1: {fileID: 60248573}
-  jobScreen2: {fileID: 1188485871}
-  jobScreen3: {fileID: 405771589}
-  jobScreen4: {fileID: 986760180}
-  jobScreen5: {fileID: 34162358}
-  jobScreen6: {fileID: 1617488156}
-  housingScreen1: {fileID: 1348958660}
-  housingScreen2: {fileID: 1595893350}
-  housingScreen3: {fileID: 543498100}
-  housingScreen4: {fileID: 277875188}
-  transportationScreen1: {fileID: 1921014831}
-  transportationScreen2: {fileID: 1878856338}
-  transportationScreen3: {fileID: 581717296}
-  transportationScreen4: {fileID: 1142961769}
-  giftScreen1: {fileID: 1753136213}
-  giftScreen2: {fileID: 86939141}
-  giftScreen3: {fileID: 668872472}
-  giftScreen4: {fileID: 1324782049}
-  summaryScreen: {fileID: 952353427}
+  maleButton: {fileID: 0}
+  femaleButton: {fileID: 0}
+  otherGenderButton: {fileID: 0}
+  europeanDescentButton: {fileID: 0}
+  africanDescentButton: {fileID: 0}
+  nativeAmericanDescentButton: {fileID: 0}
+  hispanicDescentButton: {fileID: 0}
+  asianDescentButton: {fileID: 0}
+  otherDescentButton: {fileID: 0}
+  noDegreeButton: {fileID: 0}
+  hsDiplomaButton: {fileID: 0}
+  bachelorsDegreeButton: {fileID: 0}
+  mastersDegreeButton: {fileID: 0}
+  phdDegreeButton: {fileID: 0}
+  cashierButton: {fileID: 0}
+  fryCookButton: {fileID: 0}
+  waiterButton: {fileID: 0}
+  teacherButton: {fileID: 0}
+  callCenterCustomerServiceButton: {fileID: 0}
+  callCenterLicensedSalesButton: {fileID: 0}
+  programmerButton: {fileID: 0}
+  doctorButton: {fileID: 0}
+  livingWithParentsButton: {fileID: 0}
+  crappyApartmentButton: {fileID: 0}
+  basicApartmentButton: {fileID: 0}
+  luxuryApartmentButton: {fileID: 0}
+  basicHouseButton: {fileID: 0}
+  usedCarButton: {fileID: 0}
+  newCarButton: {fileID: 0}
+  motorcycleButton: {fileID: 0}
+  busButton: {fileID: 0}
+  trainButton: {fileID: 0}
+  giftMoneyButton: {fileID: 0}
+  summaryButton1990: {fileID: 0}
+  summaryButton2020: {fileID: 0}
+  welcomeScreen: {fileID: 0}
+  genderScreen: {fileID: 0}
+  maleScreen: {fileID: 0}
+  femaleScreen: {fileID: 0}
+  otherGenderScreen: {fileID: 0}
+  raceScreen: {fileID: 0}
+  europeanDescentScreen: {fileID: 0}
+  africanDescentScreen: {fileID: 0}
+  nativeAmericanDescentScreen: {fileID: 0}
+  hispanicDescentScreen: {fileID: 0}
+  asianDescentScreen: {fileID: 0}
+  otherDescentScreen: {fileID: 0}
+  educationScreen: {fileID: 0}
+  educationScreenNoDegree: {fileID: 0}
+  educationScreenHSDiploma: {fileID: 0}
+  educationScreenBachelorsDegree: {fileID: 0}
+  educationScreenMastersDegree: {fileID: 0}
+  educationScreenPHDDegree: {fileID: 0}
+  jobScreen: {fileID: 0}
+  waiterScreen: {fileID: 0}
+  cashierScreen: {fileID: 0}
+  fryCookScreen: {fileID: 0}
+  callCenterCustomerServiceScreen: {fileID: 0}
+  teacherScreen: {fileID: 0}
+  callCenterLicensedSalesScreen: {fileID: 0}
+  programmerScreen: {fileID: 0}
+  doctorScreen: {fileID: 0}
+  housingScreen: {fileID: 0}
+  livingWithparentsScreen: {fileID: 0}
+  crappyApartmentScreen: {fileID: 0}
+  basicApartmentScreen: {fileID: 0}
+  luxuryApartmentScreen: {fileID: 0}
+  ownHouseScreen: {fileID: 0}
+  transportationScreen: {fileID: 0}
+  usedCarScreen: {fileID: 0}
+  newCarScreen: {fileID: 0}
+  motorcycleScreen: {fileID: 0}
+  busScreen: {fileID: 0}
+  trainScreen: {fileID: 0}
+  giftMoneyScreen1: {fileID: 0}
+  giftMoneyScreen2: {fileID: 0}
+  introSummaryScreen: {fileID: 0}
+  introScreenSummary1990Screen: {fileID: 0}
+  introScreenSummary2020Screen: {fileID: 0}
+  maleGender: 0
+  femaleGender: 0
+  otherGender: 0
+  europeanDescent: 0
+  africanDescent: 0
+  nativeAmericanDescent: 0
+  hispanicDescent: 0
+  asianDescent: 0
+  otherDescent: 0
   noDegree: 0
   hsDiploma: 0
   bachelorsDegree: 0
+  mastersDegree: 0
+  phdDegree: 0
+  cashier: 0
   fryCook: 0
   waiter: 0
   teacher: 0
-  callCenterAgent: 0
+  callCenterCustomerService: 0
+  callCenterLicensedSales: 0
   programmer: 0
+  doctor: 0
   crappyApartment: 0
   basicApartment: 0
   luxuryApartment: 0
-  car: 0
+  ownHouse: 0
+  livingWithParents: 0
+  usedCar: 0
+  newCar: 0
   motorcycle: 0
   bus: 0
-  summaryInitialMoneyText: {fileID: 229793884}
-  summaryEducationText: {fileID: 82175565}
-  summaryJobText: {fileID: 1311711209}
-  summaryJobPayText: {fileID: 1073982120}
-  summaryHousingText: {fileID: 1000791504}
-  summaryHousingRentText: {fileID: 1866770572}
-  summaryTransportationText: {fileID: 1767698383}
-  summaryTransportationCostText: {fileID: 112180789}
-  summaryGiftText: {fileID: 1514262261}
-  summaryCurrentMoneyText: {fileID: 2126451755}
-  initialMoney: 0
-  currentMoney: 0
+  train: 0
+  summaryInitialMoney1990Text: {fileID: 0}
+  summaryInitialMoney2020Text: {fileID: 0}
+  summaryGenderText: {fileID: 0}
+  summaryRaceText: {fileID: 0}
+  summaryEducationText: {fileID: 0}
+  summaryJobText: {fileID: 0}
+  summaryJobPay1990Text: {fileID: 0}
+  summaryJobPay2020Text: {fileID: 0}
+  summaryHousingText: {fileID: 0}
+  summaryHousingRent1990Text: {fileID: 0}
+  summaryHousingRent2020Text: {fileID: 0}
+  summaryTransportationText: {fileID: 0}
+  summaryTransportationCost1990Text: {fileID: 0}
+  summaryTransportationCost2020Text: {fileID: 0}
+  summaryGift1990Text: {fileID: 0}
+  summaryGift2020Text: {fileID: 0}
+  summaryCurrentMoney1990Text: {fileID: 0}
+  summaryCurrentMoney2020Text: {fileID: 0}
+  initialMoney1990: 0
+  initialMoney2020: 0
+  currentMoney1990: 0
+  currentMoney2020: 0
   giftMoney: 0
-  monthlySalary: 0
-  rent: 0
-  gas: 3.5
-  transportationCost: 0
+  biweeklySalary1990: 0
+  biweeklySalary2020: 0
+  rentCost1990: 0
+  rentCost2020: 0
+  gasCost1990: 0
+  gasCost2020: 0
+  transportationCost1990: 0
+  transportationCost2020: 0
+  genderSelected: 
+  raceSelected: 
   educationSelected: 
   jobSelected: 
   housingSelected: 
   transportationSelected: 
-  IntroController: {fileID: 611292233}
-  jobNow: 0
+  introGameController1: {fileID: 611292233}
+  genderNow: 0
+  raceNow: 0
   educationNow: 0
+  jobNow: 0
   travelNow: 0
   houseNow: 0
 --- !u!1 &614739597
@@ -11192,7 +11177,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1914963953}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -11329,7 +11313,6 @@ RectTransform:
   m_Children:
   - {fileID: 1041029088}
   m_Father: {fileID: 708733657}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -11380,7 +11363,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ActivityPayRent
         m_Mode: 1
@@ -11463,7 +11446,6 @@ RectTransform:
   m_Children:
   - {fileID: 1989521389}
   m_Father: {fileID: 405771590}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -11514,7 +11496,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToHousingScreen
         m_Mode: 1
@@ -11597,7 +11579,6 @@ RectTransform:
   m_Children:
   - {fileID: 297854889}
   m_Father: {fileID: 34162359}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -11648,7 +11629,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToHousingScreen
         m_Mode: 1
@@ -11729,7 +11710,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 788526537}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11837,7 +11817,6 @@ RectTransform:
   - {fileID: 1872914101}
   - {fileID: 1844646098}
   m_Father: {fileID: 882006454}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11877,7 +11856,6 @@ RectTransform:
   m_Children:
   - {fileID: 751091152}
   m_Father: {fileID: 86939142}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -11928,7 +11906,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToSummaryScreen
         m_Mode: 1
@@ -12011,7 +11989,6 @@ RectTransform:
   m_Children:
   - {fileID: 1456183186}
   m_Father: {fileID: 1844646098}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -12062,7 +12039,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -12143,7 +12120,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1983759133}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -12278,7 +12254,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1878932713}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12413,7 +12388,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1617488157}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -12548,7 +12522,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 356453070}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12683,7 +12656,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1997725716}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12820,7 +12792,6 @@ RectTransform:
   - {fileID: 1566430412}
   - {fileID: 1875697161}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12899,7 +12870,6 @@ RectTransform:
   - {fileID: 485362237}
   - {fileID: 1492630640}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12978,7 +12948,6 @@ RectTransform:
   - {fileID: 2108688075}
   - {fileID: 1153741403}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13057,7 +13026,6 @@ RectTransform:
   - {fileID: 365261709}
   - {fileID: 616065473}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13133,7 +13101,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1822757359}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -13268,7 +13235,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1324782050}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -13403,7 +13369,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1983759133}
-  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -13483,7 +13448,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 636558018}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13618,7 +13582,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1155552242}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13753,7 +13716,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1479926729}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13891,7 +13853,6 @@ RectTransform:
   - {fileID: 1677048072}
   - {fileID: 1344031810}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13967,7 +13928,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1983759133}
-  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -14050,7 +14010,6 @@ RectTransform:
   - {fileID: 1882279438}
   - {fileID: 630825827}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -14126,7 +14085,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 25151014}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -14261,7 +14219,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 526647718}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -14398,7 +14355,6 @@ RectTransform:
   m_Children:
   - {fileID: 815595708}
   m_Father: {fileID: 1753136214}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -14449,7 +14405,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ChooseGift500Dollars
         m_Mode: 1
@@ -14530,7 +14486,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 636025636}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -14606,7 +14561,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 801130799}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -14741,7 +14695,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 543498101}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -14876,7 +14829,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1961188906}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -15011,7 +14963,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 543498101}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15096,7 +15047,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 986760181}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -15231,7 +15181,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1671454189}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -15366,7 +15315,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435695246}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -15503,7 +15451,6 @@ RectTransform:
   m_Children:
   - {fileID: 1479228867}
   m_Father: {fileID: 60248574}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -15554,7 +15501,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ChooseJobTeacher
         m_Mode: 1
@@ -15635,7 +15582,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1307903171}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15765,7 +15711,9 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -15784,207 +15732,12 @@ RectTransform:
   - {fileID: 1588098392}
   - {fileID: 636025636}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &892676286
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 892676288}
-  - component: {fileID: 892676287}
-  m_Layer: 5
-  m_Name: UltimateGameController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &892676287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 892676286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4af764a35bb9e548bf9098eacb9136c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noDegreeButton: {fileID: 1488714882}
-  hsDiplomaButton: {fileID: 946851520}
-  bachelorsDegreeButton: {fileID: 1997725715}
-  fryCookButton: {fileID: 242174319}
-  waiterButton: {fileID: 64008100}
-  teacherButton: {fileID: 870962778}
-  callCenterAgentButton: {fileID: 2138436710}
-  programmerButton: {fileID: 1784997699}
-  crappyApartmentButton: {fileID: 325848918}
-  basicApartmentButton: {fileID: 267518704}
-  luxuryApartmentButton: {fileID: 1917076277}
-  carButton: {fileID: 1625370457}
-  motorcycleButton: {fileID: 1372274965}
-  busButton: {fileID: 560286082}
-  welcomeScreen: {fileID: 1156887298}
-  educationScreen1: {fileID: 1822757358}
-  educationScreen2: {fileID: 305489776}
-  educationScreen3: {fileID: 670746348}
-  educationScreen4: {fileID: 1697367637}
-  jobScreen1: {fileID: 60248573}
-  jobScreen2: {fileID: 1188485871}
-  jobScreen3: {fileID: 405771589}
-  jobScreen4: {fileID: 986760180}
-  jobScreen5: {fileID: 34162358}
-  jobScreen6: {fileID: 1617488156}
-  housingScreen1: {fileID: 1348958660}
-  housingScreen2: {fileID: 1595893350}
-  housingScreen3: {fileID: 543498100}
-  housingScreen4: {fileID: 277875188}
-  transportationScreen1: {fileID: 1921014831}
-  transportationScreen2: {fileID: 1878856338}
-  transportationScreen3: {fileID: 581717296}
-  transportationScreen4: {fileID: 1142961769}
-  giftScreen1: {fileID: 1753136213}
-  giftScreen2: {fileID: 86939141}
-  giftScreen3: {fileID: 668872472}
-  giftScreen4: {fileID: 1324782049}
-  introSummaryScreen: {fileID: 952353427}
-  noDegree: 0
-  hsDiploma: 0
-  bachelorsDegree: 0
-  fryCook: 0
-  waiter: 0
-  teacher: 0
-  callCenterAgent: 0
-  programmer: 0
-  crappyApartment: 0
-  basicApartment: 0
-  luxuryApartment: 0
-  car: 0
-  motorcycle: 0
-  bus: 0
-  summaryInitialMoneyText: {fileID: 229793884}
-  summaryEducationText: {fileID: 82175565}
-  summaryJobText: {fileID: 1311711209}
-  summaryJobPayText: {fileID: 1073982120}
-  summaryHousingText: {fileID: 1000791504}
-  summaryHousingRentText: {fileID: 1866770572}
-  summaryTransportationText: {fileID: 1767698383}
-  summaryTransportationCostText: {fileID: 112180789}
-  summaryGiftText: {fileID: 1514262261}
-  summaryCurrentMoneyText: {fileID: 2126451755}
-  initialMoney: 0
-  currentIntroMoney: 0
-  giftMoney: 0
-  monthlySalary: 0
-  rent: 0
-  gas: 3.5
-  transportationCost: 0
-  educationSelected: 
-  jobSelected: 
-  housingSelected: 
-  transportationSelected: 
-  month01Screen: {fileID: 1160391305}
-  m1educationScreen1: {fileID: 770823856}
-  m1educationScreen2: {fileID: 2083087208}
-  m1educationScreen3: {fileID: 1638804647}
-  m1jobScreen1: {fileID: 426931773}
-  m1jobScreen2: {fileID: 1383466302}
-  m1jobScreen3: {fileID: 971633673}
-  m1jobScreen4: {fileID: 379372750}
-  m1jobScreen5: {fileID: 1026968197}
-  m1housingScreen1: {fileID: 1307903170}
-  m1housingScreen2: {fileID: 350641247}
-  m1housingScreen3: {fileID: 1671454188}
-  m1transportationScreen1: {fileID: 788526536}
-  m1transportationScreen2: {fileID: 1401400956}
-  m1transportationScreen3: {fileID: 681962278}
-  m1summaryScreen: {fileID: 1983759132}
-  m1activity1RentScreen: {fileID: 708733656}
-  m1activity2TravelScreen: {fileID: 211142930}
-  m1activity3GroceryScreen: {fileID: 2060906723}
-  m1event1Screen: {fileID: 1376938609}
-  m1event2Screen: {fileID: 545728264}
-  m1gameCompleteScreen: {fileID: 1844646097}
-  m1paydayScreen: {fileID: 1872914100}
-  m1noDegreeButton: {fileID: 356453069}
-  m1hsDiplomaButton: {fileID: 1873581987}
-  m1bachelorsDegreeButton: {fileID: 192349671}
-  m1fryCookButton: {fileID: 1582334427}
-  m1waiterButton: {fileID: 1502589342}
-  m1teacherButton: {fileID: 402481803}
-  m1callCenterAgentButton: {fileID: 1435695245}
-  m1programmerButton: {fileID: 1154776552}
-  m1crappyApartmentButton: {fileID: 1155552241}
-  m1basicApartmentButton: {fileID: 41494631}
-  m1luxuryApartmentButton: {fileID: 21826670}
-  m1carButton: {fileID: 449598307}
-  m1motorcycleButton: {fileID: 1234186558}
-  m1busButton: {fileID: 1444546972}
-  m1summaryButton: {fileID: 1904144314}
-  m1activity1RentButton: {fileID: 1021612003}
-  m1activity2TravelButton: {fileID: 1674599335}
-  m1activity3GroceryButton: {fileID: 198953319}
-  m1activity1PayRentButton: {fileID: 616065472}
-  m1activity1PayTravelButton: {fileID: 1846600285}
-  m1activity3PayGrocery1Button: {fileID: 25151013}
-  m1activity3PayGrocery2Button: {fileID: 1470869077}
-  m1activity3PayGrocery3Button: {fileID: 956497173}
-  m1event2Button1: {fileID: 456983004}
-  m1event2Button2: {fileID: 524332969}
-  m1event2Button3: {fileID: 1946844828}
-  m1paydayButton: {fileID: 575679020}
-  m1startMonthButton: {fileID: 253771695}
-  m1updatingMoneyText: {fileID: 1823570919}
-  m1rentPaidText: {fileID: 224330240}
-  m1travelPaidText: {fileID: 51157881}
-  m1foodPaidText: {fileID: 220756390}
-  m1eventPaidText: {fileID: 195904598}
-  m1summaryInitialMoneyText: {fileID: 1032698182}
-  m1summaryJobText: {fileID: 1009300111}
-  m1summaryJobPayText: {fileID: 1573879922}
-  m1summaryJobTaxPaidText: {fileID: 1315022272}
-  m1summaryJobPayReceivedText: {fileID: 425924854}
-  m1summaryHousingText: {fileID: 775550957}
-  m1summaryHousingRentPaidText: {fileID: 1064667413}
-  m1summaryTransportationText: {fileID: 457802639}
-  m1summaryTransportationCostPaidText: {fileID: 747859921}
-  m1summaryGroceryCostPaidText: {fileID: 1350055092}
-  m1summaryEvent2PaidText: {fileID: 488055272}
-  m1summaryCurrentMoneyText: {fileID: 1791730902}
-  m1gameCompleteText: {fileID: 1198973488}
-  m1startingMonthMoney1: 0
-  m1currentMoney1: 0
-  m1transportationCost1: 0
---- !u!224 &892676288
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 892676286}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &917145512
 GameObject:
   m_ObjectHideFlags: 0
@@ -16016,7 +15769,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952353428}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -16151,7 +15903,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2108688075}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -16286,7 +16037,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 365261709}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -16421,7 +16171,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 350641248}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16506,7 +16255,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1488714883}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -16643,7 +16391,6 @@ RectTransform:
   m_Children:
   - {fileID: 30306238}
   m_Father: {fileID: 1822757359}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -16694,7 +16441,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ChooseEducationHighSchoolDiploma
         m_Mode: 1
@@ -16775,7 +16522,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1372274966}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -16922,7 +16668,6 @@ RectTransform:
   - {fileID: 1514262259}
   - {fileID: 2126451757}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -17000,7 +16745,6 @@ RectTransform:
   m_Children:
   - {fileID: 502050947}
   m_Father: {fileID: 2060906724}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -17051,7 +16795,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ActivityPayGrocery3
         m_Mode: 1
@@ -17134,7 +16878,6 @@ RectTransform:
   m_Children:
   - {fileID: 1692465654}
   m_Father: {fileID: 1753136214}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -17185,7 +16928,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ChooseGift0Dollars
         m_Mode: 1
@@ -17266,7 +17009,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1188485872}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17355,7 +17097,6 @@ RectTransform:
   - {fileID: 1585307233}
   - {fileID: 68813067}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -17431,7 +17172,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 581717297}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17520,7 +17260,6 @@ RectTransform:
   - {fileID: 844067532}
   - {fileID: 1120194075}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -17596,7 +17335,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952353428}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -17678,7 +17416,6 @@ RectTransform:
   m_Children:
   - {fileID: 1522087170}
   m_Father: {fileID: 2083087209}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -17729,7 +17466,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -17810,7 +17547,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1983759133}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -17890,7 +17626,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1697367638}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17971,7 +17706,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 456983005}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -18108,7 +17842,6 @@ RectTransform:
   m_Children:
   - {fileID: 1772221250}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -18159,7 +17892,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ActivityRent
         m_Mode: 1
@@ -18243,7 +17976,6 @@ RectTransform:
   - {fileID: 248200185}
   - {fileID: 1552078722}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -18319,7 +18051,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1983759133}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -18399,7 +18130,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 34162359}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -18534,7 +18264,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 426931774}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -18620,7 +18349,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 75534172}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -18755,7 +18483,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 616065473}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -18890,7 +18617,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1983759133}
-  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -18970,7 +18696,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952353428}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -19050,7 +18775,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1231738124}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -19185,7 +18909,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 788526537}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -19320,7 +19043,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1401400957}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -19408,7 +19130,6 @@ RectTransform:
   m_Children:
   - {fileID: 446890379}
   m_Father: {fileID: 350641248}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -19459,7 +19180,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -19540,7 +19261,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915128027}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -19675,7 +19395,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 485362237}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -19810,7 +19529,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 986760181}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -19899,7 +19617,6 @@ RectTransform:
   - {fileID: 1144438299}
   - {fileID: 1670077910}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -19977,7 +19694,6 @@ RectTransform:
   m_Children:
   - {fileID: 477560312}
   m_Father: {fileID: 1142961770}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -20028,7 +19744,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToGiftScreen
         m_Mode: 1
@@ -20109,7 +19825,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 681962279}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -20197,7 +19912,6 @@ RectTransform:
   m_Children:
   - {fileID: 262489708}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -20248,7 +19962,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ProgrammerInfo
         m_Mode: 1
@@ -20331,7 +20045,6 @@ RectTransform:
   m_Children:
   - {fileID: 765924440}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -20382,7 +20095,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: CrappyApartmentInfo
         m_Mode: 1
@@ -20465,7 +20178,6 @@ RectTransform:
   - {fileID: 1878932713}
   - {fileID: 1969585332}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -20543,7 +20255,6 @@ RectTransform:
   m_Children:
   - {fileID: 316448418}
   m_Father: {fileID: 379372751}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -20594,7 +20305,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -20700,7 +20411,6 @@ RectTransform:
   - {fileID: 1234186559}
   - {fileID: 1444546973}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -20776,7 +20486,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1917076278}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -20911,7 +20620,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 524332970}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -21049,7 +20757,6 @@ RectTransform:
   - {fileID: 1789371217}
   - {fileID: 970042938}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -21127,7 +20834,6 @@ RectTransform:
   m_Children:
   - {fileID: 277112910}
   m_Father: {fileID: 1697367638}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -21178,7 +20884,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToJobScreen
         m_Mode: 1
@@ -21260,7 +20966,6 @@ RectTransform:
   m_Children:
   - {fileID: 504508175}
   m_Father: {fileID: 1844646098}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -21342,7 +21047,6 @@ RectTransform:
   m_Children:
   - {fileID: 1078534665}
   m_Father: {fileID: 1753136214}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -21393,7 +21097,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ChooseGift1000Dollars
         m_Mode: 1
@@ -21476,7 +21180,6 @@ RectTransform:
   m_Children:
   - {fileID: 1794584199}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -21527,7 +21230,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: MotorcycleInfo
         m_Mode: 1
@@ -21608,7 +21311,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 21826671}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -21743,7 +21445,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 971633674}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -21880,7 +21581,6 @@ RectTransform:
   m_Children:
   - {fileID: 1281262869}
   m_Father: {fileID: 1844646098}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -21931,7 +21631,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1
@@ -22012,7 +21712,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1946844829}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -22147,7 +21846,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1873581988}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -22282,7 +21980,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1872914101}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -22419,7 +22116,6 @@ RectTransform:
   m_Children:
   - {fileID: 1453921908}
   m_Father: {fileID: 545728265}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -22470,7 +22166,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -22551,7 +22247,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1638804648}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -22632,7 +22327,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1244083892}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -22767,7 +22461,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1753136214}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -22902,7 +22595,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 708733657}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -23040,7 +22732,6 @@ RectTransform:
   - {fileID: 1596650378}
   - {fileID: 879292638}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -23116,7 +22807,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952353428}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -23198,7 +22888,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1983759133}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -23280,7 +22969,6 @@ RectTransform:
   - {fileID: 746837023}
   - {fileID: 525577777}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -23356,7 +23044,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1470869078}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -23491,7 +23178,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -23567,7 +23253,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1784997700}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -23702,7 +23387,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 770823857}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -23788,7 +23472,6 @@ RectTransform:
   - {fileID: 1917076278}
   - {fileID: 325848919}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -23864,7 +23547,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1983759133}
-  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -23944,7 +23626,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 560286083}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -24079,7 +23760,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 402481804}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -24214,7 +23894,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 483446746}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -24349,7 +24028,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1882279438}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -24486,7 +24164,6 @@ RectTransform:
   m_Children:
   - {fileID: 951659197}
   m_Father: {fileID: 1921014832}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -24537,7 +24214,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ChooseTransportationMotorcycle
         m_Mode: 1
@@ -24618,7 +24295,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 192349672}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -24756,7 +24432,6 @@ RectTransform:
   - {fileID: 1912041589}
   - {fileID: 75534172}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -24832,7 +24507,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 525577777}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -24970,7 +24644,6 @@ RectTransform:
   - {fileID: 1915128027}
   - {fileID: 1997006669}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -25046,7 +24719,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1376938610}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -25184,7 +24856,6 @@ RectTransform:
   - {fileID: 389465509}
   - {fileID: 1088973781}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -25260,7 +24931,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 545728265}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -25395,7 +25065,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1401400957}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -25532,7 +25201,6 @@ RectTransform:
   m_Children:
   - {fileID: 852424706}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -25583,7 +25251,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: CallCenterAgentInfo
         m_Mode: 1
@@ -25666,7 +25334,6 @@ RectTransform:
   m_Children:
   - {fileID: 417969672}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -25717,7 +25384,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: BusInfo
         m_Mode: 1
@@ -25798,7 +25465,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1276040937}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -25933,7 +25599,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 643594485}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -26068,7 +25733,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1671454189}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -26154,7 +25818,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 281894001}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -26318,13 +25981,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1465487679}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1470869077
 GameObject:
@@ -26359,7 +26022,6 @@ RectTransform:
   m_Children:
   - {fileID: 1326883209}
   m_Father: {fileID: 2060906724}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -26410,7 +26072,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676286}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameControllerMonth01, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
@@ -26491,7 +26153,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1026968198}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -26628,7 +26289,6 @@ RectTransform:
   m_Children:
   - {fileID: 581663273}
   m_Father: {fileID: 1671454189}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -26679,7 +26339,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -26760,7 +26420,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 870962779}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -26897,7 +26556,6 @@ RectTransform:
   m_Children:
   - {fileID: 766843704}
   m_Father: {fileID: 1872914101}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -26948,7 +26606,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -27031,7 +26689,6 @@ RectTransform:
   m_Children:
   - {fileID: 944341473}
   m_Father: {fileID: 1822757359}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -27082,7 +26739,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ChooseEducationNoDegree
         m_Mode: 1
@@ -27163,7 +26820,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 670746349}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -27246,7 +26902,6 @@ RectTransform:
   m_Children:
   - {fileID: 454784225}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -27297,7 +26952,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: WaiterInfo
         m_Mode: 1
@@ -27378,7 +27033,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952353428}
-  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -27460,7 +27114,6 @@ RectTransform:
   m_Children:
   - {fileID: 2026216148}
   m_Father: {fileID: 543498101}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -27511,7 +27164,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToTransportationScreen
         m_Mode: 1
@@ -27601,9 +27254,17 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -27637,13 +27298,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515704254}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1522087169
 GameObject:
@@ -27676,7 +27337,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1009127062}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -27811,7 +27471,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1861999805}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -27948,7 +27607,6 @@ RectTransform:
   m_Children:
   - {fileID: 2023175254}
   m_Father: {fileID: 952353428}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -27999,7 +27657,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToMonth01
         m_Mode: 1
@@ -28080,7 +27738,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1026968198}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -28166,7 +27823,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1878856339}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -28301,7 +27957,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 668872473}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -28436,7 +28091,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 405771590}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -28522,7 +28176,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1983759133}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -28604,7 +28257,6 @@ RectTransform:
   m_Children:
   - {fileID: 583358003}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -28655,7 +28307,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: FryCookInfo
         m_Mode: 1
@@ -28738,7 +28390,6 @@ RectTransform:
   m_Children:
   - {fileID: 1623423275}
   m_Father: {fileID: 971633674}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -28789,7 +28440,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -28893,7 +28544,6 @@ RectTransform:
   - {fileID: 1324782050}
   - {fileID: 952353428}
   m_Father: {fileID: 882006454}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -28934,7 +28584,6 @@ RectTransform:
   - {fileID: 475616605}
   - {fileID: 1695500624}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -29012,7 +28661,6 @@ RectTransform:
   m_Children:
   - {fileID: 382447641}
   m_Father: {fileID: 1307903171}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -29063,7 +28711,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -29144,7 +28792,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 379372751}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -29232,7 +28879,6 @@ RectTransform:
   m_Children:
   - {fileID: 2122495775}
   m_Father: {fileID: 1983759133}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -29283,7 +28929,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: GameComplete
         m_Mode: 1
@@ -29367,7 +29013,6 @@ RectTransform:
   - {fileID: 651125629}
   - {fileID: 525298827}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -29443,7 +29088,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 277875189}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -29578,7 +29222,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1585307233}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -29715,7 +29358,6 @@ RectTransform:
   m_Children:
   - {fileID: 475050657}
   m_Father: {fileID: 1921014832}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -29766,7 +29408,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ChooseTransportationCar
         m_Mode: 1
@@ -29850,7 +29492,6 @@ RectTransform:
   - {fileID: 1857095963}
   - {fileID: 1278197594}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -29926,7 +29567,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1142961770}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -30015,7 +29655,6 @@ RectTransform:
   - {fileID: 1477450071}
   - {fileID: 1458218445}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -30093,7 +29732,6 @@ RectTransform:
   m_Children:
   - {fileID: 248791507}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -30144,7 +29782,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ActivityTravel
         m_Mode: 1
@@ -30227,7 +29865,6 @@ RectTransform:
   m_Children:
   - {fileID: 1865109714}
   m_Father: {fileID: 770823857}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -30278,7 +29915,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -30359,7 +29996,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 961359097}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -30494,7 +30130,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1595893351}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -30582,7 +30217,6 @@ RectTransform:
   - {fileID: 1198449711}
   - {fileID: 1017582080}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -30658,7 +30292,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 211142931}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -30793,7 +30426,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 670746349}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -30928,7 +30560,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 575679021}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -31063,7 +30694,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 581717297}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -31202,7 +30832,6 @@ RectTransform:
   - {fileID: 961359097}
   - {fileID: 1231738124}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -31278,7 +30907,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1912041589}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -31413,7 +31041,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1142961770}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -31548,7 +31175,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 681962279}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -31683,7 +31309,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952353428}
-  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -31763,7 +31388,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1021612004}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -31900,7 +31524,6 @@ RectTransform:
   m_Children:
   - {fileID: 1330147459}
   m_Father: {fileID: 60248574}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -31951,7 +31574,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ChooseJobProgrammer
         m_Mode: 1
@@ -32032,7 +31655,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1188485872}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -32167,7 +31789,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1983759133}
-  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -32247,7 +31868,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 389465509}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -32382,7 +32002,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1234186559}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -32517,7 +32136,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1307903171}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -32652,7 +32270,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1638804648}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -32791,7 +32408,6 @@ RectTransform:
   - {fileID: 946851521}
   - {fileID: 1997725716}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -32867,7 +32483,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -32947,7 +32562,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2083087209}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -33082,7 +32696,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1875697161}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -33220,7 +32833,6 @@ RectTransform:
   - {fileID: 1244083892}
   - {fileID: 1198973487}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -33298,7 +32910,6 @@ RectTransform:
   m_Children:
   - {fileID: 2023767792}
   m_Father: {fileID: 211142931}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -33349,7 +32960,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ActivityPayTravel
         m_Mode: 1
@@ -33432,7 +33043,6 @@ RectTransform:
   m_Children:
   - {fileID: 350611755}
   m_Father: {fileID: 1638804648}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -33483,7 +33093,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -33566,7 +33176,6 @@ RectTransform:
   m_Children:
   - {fileID: 1523893041}
   m_Father: {fileID: 1878856339}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -33617,7 +33226,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToGiftScreen
         m_Mode: 1
@@ -33698,7 +33307,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 514152394}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -33833,7 +33441,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1677048072}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -33968,7 +33575,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952353428}
-  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -34051,7 +33657,6 @@ RectTransform:
   - {fileID: 1479926729}
   - {fileID: 575679021}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -34129,7 +33734,6 @@ RectTransform:
   m_Children:
   - {fileID: 1259064350}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -34180,7 +33784,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: HSDiplomaInfo
         m_Mode: 1
@@ -34263,7 +33867,6 @@ RectTransform:
   m_Children:
   - {fileID: 1844240300}
   m_Father: {fileID: 668872473}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -34314,7 +33917,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToSummaryScreen
         m_Mode: 1
@@ -34398,7 +34001,6 @@ RectTransform:
   - {fileID: 1861999805}
   - {fileID: 2002889592}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -34476,7 +34078,6 @@ RectTransform:
   m_Children:
   - {fileID: 650358141}
   m_Father: {fileID: 1156887299}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -34527,7 +34128,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToEducationScreen
         m_Mode: 1
@@ -34610,7 +34211,6 @@ RectTransform:
   m_Children:
   - {fileID: 1368107646}
   m_Father: {fileID: 788526537}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -34661,7 +34261,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -34742,7 +34342,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 305489777}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -34826,7 +34425,6 @@ RectTransform:
   m_Children:
   - {fileID: 269648765}
   m_Father: {fileID: 1160391306}
-  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -34877,7 +34475,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: Month01Summary
         m_Mode: 1
@@ -34960,7 +34558,6 @@ RectTransform:
   m_Children:
   - {fileID: 2074029412}
   m_Father: {fileID: 2060906724}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -35011,7 +34608,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -35094,7 +34691,6 @@ RectTransform:
   m_Children:
   - {fileID: 1758573826}
   m_Father: {fileID: 1376938610}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -35145,7 +34741,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -35228,7 +34824,6 @@ RectTransform:
   m_Children:
   - {fileID: 614739598}
   m_Father: {fileID: 986760181}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -35279,7 +34874,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToHousingScreen
         m_Mode: 1
@@ -35362,7 +34957,6 @@ RectTransform:
   m_Children:
   - {fileID: 1117311032}
   m_Father: {fileID: 1383466303}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -35413,7 +35007,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -35496,7 +35090,6 @@ RectTransform:
   m_Children:
   - {fileID: 1170824147}
   m_Father: {fileID: 1348958661}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -35547,7 +35140,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ChooseHousingLuxuryApartment
         m_Mode: 1
@@ -35632,7 +35225,6 @@ RectTransform:
   - {fileID: 560286083}
   - {fileID: 1625370458}
   m_Father: {fileID: 1588098392}
-  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -35708,7 +35300,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 405771590}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -35845,7 +35436,6 @@ RectTransform:
   m_Children:
   - {fileID: 1248673103}
   m_Father: {fileID: 545728265}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -35896,7 +35486,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: Event2d
         m_Mode: 1
@@ -35977,7 +35567,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 475616605}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -36114,7 +35703,6 @@ RectTransform:
   m_Children:
   - {fileID: 823561000}
   m_Father: {fileID: 1188485872}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -36165,7 +35753,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToHousingScreen
         m_Mode: 1
@@ -36246,7 +35834,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 350641248}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -36381,7 +35968,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1156887299}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -36530,7 +36116,6 @@ RectTransform:
   - {fileID: 488055271}
   - {fileID: 1791730901}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -36606,7 +36191,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 618409290}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -36741,7 +36325,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 34162359}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -36827,7 +36410,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1383466303}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -36915,7 +36497,6 @@ RectTransform:
   m_Children:
   - {fileID: 655681108}
   m_Father: {fileID: 1822757359}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -36966,7 +36547,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ChooseEducationBachelorsDegree
         m_Mode: 1
@@ -37047,7 +36628,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1878856339}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -37133,7 +36713,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 325848919}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -37268,7 +36847,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1545072276}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -37403,7 +36981,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1846600286}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -37538,7 +37115,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1514560180}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -37673,7 +37249,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1921014832}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -37808,7 +37383,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 41494632}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -37948,7 +37522,6 @@ RectTransform:
   - {fileID: 1470869078}
   - {fileID: 956497174}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -38024,7 +37597,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 426931774}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -38159,7 +37731,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1909259588}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -38294,7 +37865,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 267518705}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -38432,7 +38002,6 @@ RectTransform:
   - {fileID: 1009127062}
   - {fileID: 409593224}
   m_Father: {fileID: 636025636}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -38510,7 +38079,6 @@ RectTransform:
   m_Children:
   - {fileID: 923706512}
   m_Father: {fileID: 681962279}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -38561,7 +38129,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ReturnToMonth01
         m_Mode: 1
@@ -38642,7 +38210,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 60248574}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -38779,7 +38346,6 @@ RectTransform:
   m_Children:
   - {fileID: 188020518}
   m_Father: {fileID: 1617488157}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -38830,7 +38396,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ToHousingScreen
         m_Mode: 1
@@ -38911,7 +38477,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1609524415}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -39088,7 +38653,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952353428}
-  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -39128,7 +38692,6 @@ RectTransform:
   m_Children:
   - {fileID: 195424333}
   m_Father: {fileID: 60248574}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -39179,7 +38742,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892676287}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UltimateGameController, Assembly-CSharp
         m_MethodName: ChooseJobCallCenterAgent
         m_Mode: 1
@@ -39260,7 +38823,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1595893351}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -39364,3 +38926,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145983076}
   m_CullTransparentMesh: 1
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 1515704257}
+  - {fileID: 882006454}
+  - {fileID: 1465487682}
+  - {fileID: 611292234}

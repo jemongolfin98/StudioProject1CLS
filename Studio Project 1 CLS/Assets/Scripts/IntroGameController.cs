@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.SceneManagement;
 
 public class IntroGameController : MonoBehaviour
@@ -84,7 +84,7 @@ public class IntroGameController : MonoBehaviour
     public GameObject educationScreenNoDegree;
     public GameObject educationScreenHSDiploma;
     public GameObject educationScreenBachelorsDegree;
-    public GameOnject educationScreenMastersDegree;
+    public GameObject educationScreenMastersDegree;
     public GameObject educationScreenPHDDegree;
 
     //Game Screens - Employment
@@ -101,7 +101,7 @@ public class IntroGameController : MonoBehaviour
     //Game Screens - Housing
     public GameObject housingScreen;
     public GameObject livingWithparentsScreen;
-    public GameObject crappyApartmentScreen;;
+    public GameObject crappyApartmentScreen;
     public GameObject basicApartmentScreen;
     public GameObject luxuryApartmentScreen;
     public GameObject ownHouseScreen;
@@ -170,7 +170,7 @@ public class IntroGameController : MonoBehaviour
     public bool train = false;
 
 
-    //Game Intro Summary Text
+    //Game Intro Summary
     public Text summaryInitialMoney1990Text;
     public Text summaryInitialMoney2020Text;
     public Text summaryGenderText;
@@ -214,7 +214,7 @@ public class IntroGameController : MonoBehaviour
     public string transportationSelected;
 
     //Other Variables
-    public GameObject IntroGameController;
+    public GameObject introGameController1;
     public int genderNow;
     public int raceNow;
     public int educationNow;
@@ -257,7 +257,8 @@ public class IntroGameController : MonoBehaviour
         summaryTransportationText.text = "Transportation Status: " + transportationSelected;
         summaryTransportationCost1990Text.text = " - Weekly Transportation Cost: $" + transportationCost1990;
         summaryTransportationCost2020Text.text = " - Weekly Transportation Cost: $" + transportationCost2020;
-        summaryGiftText.text = "Gift Received: $" + giftMoney;
+        summaryGift1990Text.text = "Gift Received: $" + giftMoney;
+        summaryGift2020Text.text = "Gift Received: $" + giftMoney;
         summaryCurrentMoney1990Text.text = "Current Money: $" + currentMoney1990;
         summaryCurrentMoney2020Text.text = "Current Money: $" + currentMoney2020;
     }
@@ -287,7 +288,7 @@ public class IntroGameController : MonoBehaviour
             genderSelected = "Female";
             genderNow = 2;
         }
-        else if (noGender == true)
+        else if (otherGender == true)
         {
             genderScreen.SetActive(false);
             maleScreen.SetActive(false);
@@ -739,7 +740,7 @@ public class IntroGameController : MonoBehaviour
             luxuryApartmentButton.SetActive(true);
             basicHouseButton.SetActive(true);
         }
-        else if (callCenterAgent == true)
+        else if (callCenterCustomerService == true)
         {
             //Changes Panel View
             jobScreen.SetActive(false);
@@ -1227,9 +1228,21 @@ public class IntroGameController : MonoBehaviour
         }
     }
 
-    public void ChooseTransportationCar()
+    public void ChooseTransportationUsedCar()
     {
-        car = true;
+        usedCar = true;
+        ChooseTransportation();
+    }
+
+    public void ChooseTransportationNewCar()
+    {
+        newCar = true;
+        ChooseTransportation();
+    }
+
+    public void ChooseTransportationMotorcycle()
+    {
+        motorcycle = true;
         ChooseTransportation();
     }
 
@@ -1239,9 +1252,9 @@ public class IntroGameController : MonoBehaviour
         ChooseTransportation();
     }
 
-    public void ChooseTransportationMotorcycle()
+    public void ChooseTransportationTrain()
     {
-        motorcycle = true;
+        train = true;
         ChooseTransportation();
     }
 
@@ -1252,8 +1265,10 @@ public class IntroGameController : MonoBehaviour
         giftMoneyScreen1.SetActive(false);
         giftMoneyScreen2.SetActive(false);
 
-        Random giftrand1 = new Random();
-        giftMoney = giftrand1.Next(1001);
+        //Random giftrand1 = new Random();
+        //giftMoney = giftrand1.Next(1001);
+
+        giftMoney = Random.Range(0, 1000);
     }
 
 
@@ -1360,13 +1375,13 @@ public class IntroGameController : MonoBehaviour
     //Quit Game at end of level
     public void QuitGame()
     {
-        SceneManager.LoadScene(MainMenu);
+        //SceneManager.LoadScene(MainMenu);
     }
 
     //Move to Month 01 - Week 01
     public void Week01()
     {
-        SceneManager.LoadScene(Week01);
+        //SceneManager.LoadScene(Week01);
     }
 }
 
