@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Studio Project 1 CLS.sln"
+    "dotnet.defaultSolution": "Studio Project 1 CLS.sln",
+    "git.ignoreLimitWarning": true
 }

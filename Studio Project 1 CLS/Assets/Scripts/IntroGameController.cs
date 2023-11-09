@@ -26,26 +26,50 @@ public class IntroGameController : MonoBehaviour
     public GameObject hsDiplomaButton;
     public GameObject bachelorsDegreeButton;
     public GameObject mastersDegreeButton;
-    public GameObject phdDegreeButton;
+    public GameObject advancedDegreeButton;
 
     //Game Buttons - Employment
     public GameObject cashierButton;
     public GameObject fryCookButton;
     public GameObject waiterButton;
+    public GameObject customerServiceAgentButton;
     public GameObject teacherButton;
-    public GameObject callCenterCustomerServiceButton;
-    public GameObject callCenterLicensedSalesButton;
+    public GameObject licensedSalesAgentButton;
     public GameObject programmerButton;
+    public GameObject unknownJobButton;
     public GameObject doctorButton;
+    public GameObject lawyerButton;
 
     // Game Buttons - Housing
     public GameObject livingWithParentsButton;
-    public GameObject crappyApartmentButton;
+    public GameObject livingWithRoommatesButton;
     public GameObject basicApartmentButton;
     public GameObject luxuryApartmentButton;
     public GameObject basicHouseButton;
+    public GameObject luxuryHouseButton;
+
+    //Game Buttons - Utilities
+    public GameObject utilitiesElectricButton;
+    public GameObject utilitiesWaterButton;
+    public GameObject utiliiesCommunicationsButton;
+    public GameObject housePhone1990Button;
+    public GameObject housePhone2020Button;
+    public GameObject basicCellPhone1990Button;
+    public GameObject basicCellPhone2020Button;
+    public GameObject unlimitedCellPhone2020Button;
+    public GameObject utilitiesEntertainmentButton;
+    public GameObject basicCable1990Button;
+    public GameObject basicCable2020Button;
+    public GameObject premiumCable1990Button;
+    public GameObject premiumCable2020Button;
+    public GameObject streamingService2020Button;
+    public GameObject utilitiesInternetButton;
+    public GameObject mb50Internet2020Button;
+    public GameObject mb100Internet2020Button;
+    public GameObject mb200Internet2020Button;
 
     //Game Buttons - Transportation
+    public GameObject bicycleButton;
     public GameObject usedCarButton;
     public GameObject newCarButton;
     public GameObject motorcycleButton;
@@ -89,24 +113,46 @@ public class IntroGameController : MonoBehaviour
 
     //Game Screens - Employment
     public GameObject jobScreen;
-    public GameObject waiterScreen;
     public GameObject cashierScreen;
     public GameObject fryCookScreen;
-    public GameObject callCenterCustomerServiceScreen;
+    public GameObject waiterScreen;
+    public GameObject customerServiceAgentScreen;
     public GameObject teacherScreen;
-    public GameObject callCenterLicensedSalesScreen;
+    public GameObject licensedSalesAgentScreen;
     public GameObject programmerScreen;
-    public GameObject unknownScreen;
+    public GameObject unknownJobScreen;
     public GameObject doctorScreen;
     public GameObject lawyerScreen;
 
     //Game Screens - Housing
     public GameObject housingScreen;
-    public GameObject livingWithparentsScreen;
-    public GameObject crappyApartmentScreen;
+    public GameObject livingWithParentsScreen;
+    public GameObject livingWithRoommatesScreen;
     public GameObject basicApartmentScreen;
     public GameObject luxuryApartmentScreen;
-    public GameObject ownHouseScreen;
+    public GameObject basicHouseScreen;
+    public GameObject luxuryHouseScreen;
+
+    //Game Screens - Utilities
+    public GameObject utilitiesScreen;
+    public GameObject utilitiesElectricScreen;
+    public GameObject utilitiesWaterScreen;
+    public GameObject utilitiesCommunicationsScreen;
+    public GameObject housePhone1990Screen;
+    public GameObject housePhone2020Screen;
+    public GameObject basicCellPhone1990Screen;
+    public GameObject basicCellPhone2020Screen;
+    public GameObject unlimitedCellPhone2020Screen;
+    public GameObject utilitiesEntertainmentScreen;
+    public GameObject basicCable1990Screen;
+    public GameObject basicCable2020Screen;
+    public GameObject premiumCable1990Screen;
+    public GameObject premiumCable2020Screen;
+    public GameObject streamingService2020Screen;
+    public GameObject utilitiesInternetScreen;
+    public GameObject mb50Internet2020Screen;
+    public GameObject mb100Internet2020Screen;
+    public GameObject mb200Internet2020Screen;
 
     //Game Screens - Transportation
     public GameObject transportationScreen;
@@ -123,8 +169,8 @@ public class IntroGameController : MonoBehaviour
     
     //Game Screens - Summary
     public GameObject introSummaryScreen;
-    public GameObject introScreenSummary1990Screen;
-    public GameObject introScreenSummary2020Screen;
+    public GameObject introSummary1990Screen;
+    public GameObject introSummary2020Screen;
 
 
     //Game Setting Variables
@@ -152,20 +198,43 @@ public class IntroGameController : MonoBehaviour
     public bool cashier = false;
     public bool fryCook = false;
     public bool waiter = false;
+    public bool customerServiceAgent = false;
     public bool teacher = false;
-    public bool callCenterCustomerService = false;
-    public bool callCenterLicensedSales = false;
+    public bool licensedSalesAgent = false;
     public bool programmer = false;
-    public bool unknown = false;
+    public bool unknownJob = false;
     public bool doctor = false;
     public bool lawyer = false;
 
     //Game Setting Variables - Housing
     public bool livingWithParents = false;
-    public bool crappyApartment = false;
+    public bool livingWithRoommates = false;
     public bool basicApartment = false;
     public bool luxuryApartment = false;
-    public bool ownHouse = false;
+    public bool basicHouse = false;
+    public bool luxuryHouse = false;
+
+    //Game Setting Variables - Utilities
+    public bool utilityElectric = false;
+    public bool utilityWater = false;
+    public bool utilityCommunications1990 = false;
+    public bool utilityCommunications2020 = false;
+    public bool housePhone1990 = false;
+    public bool housePhone2020 = false;
+    public bool basicCellPhone1990 = false;
+    public bool basicCellPhone2020 = false;
+    public bool unlimitedCellPhone2020 = false;
+    public bool utilityEntertainment1990 = false;
+    public bool utilityEntertainment2020 = false;
+    public bool basicCable1990 = false;
+    public bool basicCable2020 = false;
+    public bool premiumCable1990 = false;
+    public bool premiumCable2020 = false;
+    public bool streamingService2020 = false;
+    public bool utilityInternet2020 = false;
+    public bool mb50Internet = false;
+    public bool mb100Internet = false;
+    public bool mb200Internet = false;
 
     //Game Setting Variables - Transportation
     public bool bicycle = false;
@@ -193,6 +262,10 @@ public class IntroGameController : MonoBehaviour
     public Text summaryHousing2020Text;
     public Text summaryHousingRent1990Text;
     public Text summaryHousingRent2020Text;
+    public Text summaryUtilities1990Text;
+    public Text summaryUtilities2020Text;
+    public Text summaryUtilitiesCost1990Text;
+    public Text summaryUtilitiesCost2020Text;
     public Text summaryTransportation1990Text;
     public Text summaryTransportation2020Text;
     public Text summaryTransportationCost1990Text;
@@ -212,10 +285,26 @@ public class IntroGameController : MonoBehaviour
     public double biweeklySalary2020 = 0.00;
     public double rentCost1990 = 0.00;
     public double rentCost2020 = 0.00;
+    public double mortgageCost1990 = 0.00;
+    public double mortgageCost2020 = 0.00;
+    public double utilitiesCost1990 = 0.00;
+    public double utilitiesCost2020 = 0.00;
     public double gasCost1990 = 0.00;
     public double gasCost2020 = 0.00;
     public double transportationCost1990 = 0.00;
     public double transportationCost2020 = 0.00;
+
+    //Utility Monetary Variables
+    public double utilityElectricCost1990 = 0.00;
+    public double utilityElectricCost2020 = 0.00;
+    public double utilityWaterCost1990 = 0.00;
+    public double utilityWaterCost2020 = 0.00;
+    public double utilityCommunicationsCost1990 = 0.00;
+    public double utilityCommunicationsCost2020 = 0.00;
+    public double utilityEntertainmentCost1990 = 0.00;
+    public double utilityEntertainmentCost2020 = 0.00;
+    public double utilityInternetCost2020 = 0.00;
+
 
     //Game Option Selection
     public string genderSelected;
@@ -225,14 +314,30 @@ public class IntroGameController : MonoBehaviour
     public string housingSelected;
     public string transportationSelected;
 
+    //Utility Selection
+    public string utilityElectric1990Selected;
+    public string utilityElectric2020Selected;
+    public string utilityWater1990Selected;
+    public string utilityWater2020Selected;
+    public string utilityCommunications1990Selected;
+    public string utilityCommunications2020Selected;
+    public string utilityEntertainment1990Selected;
+    public string utilityEntertainment2020Selected;
+    public string utilityInternet2020Selected;
+
     //Other Variables
     public GameObject introGameController1;
+    public GameObject backFromCommunicationsButton;
+    public GameObject backFromEntertainmentButton;
+    public GameObject backFromInternetButton;
     public int genderNow;
     public int raceNow;
     public int educationNow;
     public int jobNow;
-    public int travelNow;
     public int houseNow;
+
+    public int utilitiesNow;
+    public int travelNow;
 
 
     // Start is called before the first frame update
@@ -254,6 +359,10 @@ public class IntroGameController : MonoBehaviour
         currentMoney1990 = initialMoney1990 + giftMoney;
         currentMoney2020 = initialMoney2020 + giftMoney;
 
+        //Updating Utility Cost
+        utilitiesCost1990 = utilityElectricCost1990 + utilityWaterCost1990 + utilityCommunicationsCost1990 + utilityEntertainmentCost1990;
+        utilitiesCost2020 = utilityElectricCost2020 + utilityWaterCost2020 + utilityCommunicationsCost2020 + utilityEntertainmentCost2020 + utilityInternetCost2020;
+
         //Setting Up Summary of Game Stats
         summaryInitialMoney1990Text.text = "Initial Money: $" + initialMoney1990;
         summaryInitialMoney2020Text.text = "Initial Money: $" + initialMoney2020;
@@ -269,8 +378,20 @@ public class IntroGameController : MonoBehaviour
         summaryJobPay2020Text.text = " - Bi-Weekly Salary: $" + biweeklySalary2020;
         summaryHousing1990Text.text = "Housing Status: " + housingSelected;
         summaryHousing2020Text.text = "Housing Status: " + housingSelected;
-        summaryHousingRent1990Text.text = " - Monthly Rent: $" + rentCost1990;
-        summaryHousingRent2020Text.text = " - Monthly Rent: $" + rentCost2020;
+        if (basicHouse == false && luxuryHouse == false)
+        {
+            summaryHousingRent1990Text.text = " - Monthly Rent: $" + rentCost1990;
+            summaryHousingRent2020Text.text = " - Monthly Rent: $" + rentCost2020;
+        }
+        else if (basicHouse == true || luxuryHouse == true)
+        {
+            summaryHousingRent1990Text.text = " - Monthly Mortgage: $" + mortgageCost1990;
+            summaryHousingRent2020Text.text = " - Monthly Mortgage: $" + mortgageCost2020;
+        }
+        //summaryUtilities1990Text.text = "Utilities Selected: " + utilityElectric1990Selected + ", " + utilityWater1990Selected + ", " + utilityCommunications1990Selected + ", " + utilityEntertainment1990Selected;
+        //summaryUtilities2020Text.text = "Utilities Selected: " + utilityElectric2020Selected + ", " + utilityWater2020Selected + ", " + utilityCommunications2020Selected + ", " + utilityEntertainment2020Selected + ", " + utilityInternet2020Selected;
+        //summaryUtilitiesCost1990Text.text = " - Monthly Utilities: $" + utilitiesCost1990;
+        //summaryUtilitiesCost2020Text.text = " - Monthly Utilities: $" + utilitiesCost2020;
         summaryTransportation1990Text.text = "Transportation Status: " + transportationSelected;
         summaryTransportation2020Text.text = "Transportation Status: " + transportationSelected;
         summaryTransportationCost1990Text.text = " - Weekly Transportation Cost: $" + transportationCost1990;
@@ -479,11 +600,13 @@ public class IntroGameController : MonoBehaviour
             waiterButton.SetActive(true);
             cashierButton.SetActive(true);
             fryCookButton.SetActive(true);
-            callCenterCustomerServiceButton.SetActive(true);
+            customerServiceAgentButton.SetActive(true);
             teacherButton.SetActive(true);
-            callCenterLicensedSalesButton.SetActive(true);
+            licensedSalesAgentButton.SetActive(true);
             programmerButton.SetActive(true);
+            unknownJobButton.SetActive(true);
             doctorButton.SetActive(true);
+            lawyerButton.SetActive(true);
         }
         else if (hsDiploma == true)
         {
@@ -502,11 +625,13 @@ public class IntroGameController : MonoBehaviour
             waiterButton.SetActive(true);
             cashierButton.SetActive(true);
             fryCookButton.SetActive(true);
-            callCenterCustomerServiceButton.SetActive(true);
+            customerServiceAgentButton.SetActive(true);
             teacherButton.SetActive(true);
-            callCenterLicensedSalesButton.SetActive(true);
+            licensedSalesAgentButton.SetActive(true);
             programmerButton.SetActive(true);
+            unknownJobButton.SetActive(true);
             doctorButton.SetActive(true);
+            lawyerButton.SetActive(true);
         }
         else if (bachelorsDegree == true)
         {
@@ -525,11 +650,13 @@ public class IntroGameController : MonoBehaviour
             waiterButton.SetActive(true);
             cashierButton.SetActive(true);
             fryCookButton.SetActive(true);
-            callCenterCustomerServiceButton.SetActive(true);
+            customerServiceAgentButton.SetActive(true);
             teacherButton.SetActive(true);
-            callCenterLicensedSalesButton.SetActive(true);
+            licensedSalesAgentButton.SetActive(true);
             programmerButton.SetActive(true);
+            unknownJobButton.SetActive(true);
             doctorButton.SetActive(true);
+            lawyerButton.SetActive(true);
         }
         else if (mastersDegree == true)
         {
@@ -548,11 +675,13 @@ public class IntroGameController : MonoBehaviour
             waiterButton.SetActive(true);
             cashierButton.SetActive(true);
             fryCookButton.SetActive(true);
-            callCenterCustomerServiceButton.SetActive(true);
+            customerServiceAgentButton.SetActive(true);
             teacherButton.SetActive(true);
-            callCenterLicensedSalesButton.SetActive(true);
+            licensedSalesAgentButton.SetActive(true);
             programmerButton.SetActive(true);
+            unknownJobButton.SetActive(true);
             doctorButton.SetActive(true);
+            lawyerButton.SetActive(true);
         }
         else if (advancedDegree == true)
         {
@@ -564,18 +693,20 @@ public class IntroGameController : MonoBehaviour
             educationScreenMastersDegree.SetActive(false);
             educationScreenAdvancedDegree.SetActive(true);
 
-            educationSelected = "PhD";
+            educationSelected = "Advanced Degree";
             educationNow = 5;
 
             //Sets Available Jobs
             waiterButton.SetActive(true);
             cashierButton.SetActive(true);
             fryCookButton.SetActive(true);
-            callCenterCustomerServiceButton.SetActive(true);
+            customerServiceAgentButton.SetActive(true);
             teacherButton.SetActive(true);
-            callCenterLicensedSalesButton.SetActive(true);
+            licensedSalesAgentButton.SetActive(true);
             programmerButton.SetActive(true);
+            unknownJobButton.SetActive(true);
             doctorButton.SetActive(true);
+            lawyerButton.SetActive(true);
         }
     }
     
@@ -621,17 +752,19 @@ public class IntroGameController : MonoBehaviour
             waiterScreen.SetActive(true);
             cashierScreen.SetActive(false);
             fryCookScreen.SetActive(false);
-            callCenterCustomerServiceScreen.SetActive(false);
+            customerServiceAgentScreen.SetActive(false);
             teacherScreen.SetActive(false);
-            callCenterLicensedSalesScreen.SetActive(false);
+            licensedSalesAgentScreen.SetActive(false);
             programmerScreen.SetActive(false);
+            unknownJobScreen.SetActive(false);
             doctorScreen.SetActive(false);
+            lawyerScreen.SetActive(false);
 
             jobSelected = "Waiter";
             jobNow = 1;
 
             //Setting Pay
-            switch (jobNow)
+            switch (educationNow)
             {
                 case 1:
                     biweeklySalary1990 = 0.00;
@@ -657,10 +790,11 @@ public class IntroGameController : MonoBehaviour
 
             //Sets Available Housing
             livingWithParentsButton.SetActive(true);
-            crappyApartmentButton.SetActive(true);
+            livingWithRoommatesButton.SetActive(true);
             basicApartmentButton.SetActive(true);
             luxuryApartmentButton.SetActive(true);
             basicHouseButton.SetActive(true);
+            luxuryHouseButton.SetActive(true);
         }
         else if (cashier == true)
         {
@@ -669,17 +803,19 @@ public class IntroGameController : MonoBehaviour
             waiterScreen.SetActive(false);
             cashierScreen.SetActive(true);
             fryCookScreen.SetActive(false);
-            callCenterCustomerServiceScreen.SetActive(false);
+            customerServiceAgentScreen.SetActive(false);
             teacherScreen.SetActive(false);
-            callCenterLicensedSalesScreen.SetActive(false);
+            licensedSalesAgentScreen.SetActive(false);
             programmerScreen.SetActive(false);
+            unknownJobScreen.SetActive(false);
             doctorScreen.SetActive(false);
+            lawyerScreen.SetActive(false);
 
             jobSelected = "Cashier";
             jobNow = 2;
 
             //Setting Pay
-            switch (jobNow)
+            switch (educationNow)
             {
                 case 1:
                     biweeklySalary1990 = 0.00;
@@ -705,10 +841,11 @@ public class IntroGameController : MonoBehaviour
 
             //Sets Available Housing
             livingWithParentsButton.SetActive(true);
-            crappyApartmentButton.SetActive(true);
+            livingWithRoommatesButton.SetActive(true);
             basicApartmentButton.SetActive(true);
             luxuryApartmentButton.SetActive(true);
             basicHouseButton.SetActive(true);
+            luxuryHouseButton.SetActive(true);
         }
         else if (fryCook == true)
         {
@@ -717,17 +854,19 @@ public class IntroGameController : MonoBehaviour
             waiterScreen.SetActive(false);
             cashierScreen.SetActive(false);
             fryCookScreen.SetActive(true);
-            callCenterCustomerServiceScreen.SetActive(false);
+            customerServiceAgentScreen.SetActive(false);
             teacherScreen.SetActive(false);
-            callCenterLicensedSalesScreen.SetActive(false);
+            licensedSalesAgentScreen.SetActive(false);
             programmerScreen.SetActive(false);
+            unknownJobScreen.SetActive(false);
             doctorScreen.SetActive(false);
+            lawyerScreen.SetActive(false);
 
             jobSelected = "Fry Cook";
             jobNow = 3;
 
             //Setting Pay
-            switch (jobNow)
+            switch (educationNow)
             {
                 case 1:
                     biweeklySalary1990 = 0.00;
@@ -753,29 +892,32 @@ public class IntroGameController : MonoBehaviour
 
             //Sets Available Housing
             livingWithParentsButton.SetActive(true);
-            crappyApartmentButton.SetActive(true);
+            livingWithRoommatesButton.SetActive(true);
             basicApartmentButton.SetActive(true);
             luxuryApartmentButton.SetActive(true);
             basicHouseButton.SetActive(true);
+            luxuryHouseButton.SetActive(true);
         }
-        else if (callCenterCustomerService == true)
+        else if (customerServiceAgent == true)
         {
             //Changes Panel View
             jobScreen.SetActive(false);
             waiterScreen.SetActive(false);
             cashierScreen.SetActive(false);
             fryCookScreen.SetActive(false);
-            callCenterCustomerServiceScreen.SetActive(true);
+            customerServiceAgentScreen.SetActive(true);
             teacherScreen.SetActive(false);
-            callCenterLicensedSalesScreen.SetActive(false);
+            licensedSalesAgentScreen.SetActive(false);
             programmerScreen.SetActive(false);
+            unknownJobScreen.SetActive(false);
             doctorScreen.SetActive(false);
+            lawyerScreen.SetActive(false);
 
             jobSelected = "Call Center Agent";
             jobNow = 4;
 
             //Setting Pay
-            switch (jobNow)
+            switch (educationNow)
             {
                 case 1:
                     biweeklySalary1990 = 0.00;
@@ -801,10 +943,11 @@ public class IntroGameController : MonoBehaviour
 
             //Sets Available Housing
             livingWithParentsButton.SetActive(true);
-            crappyApartmentButton.SetActive(true);
+            livingWithRoommatesButton.SetActive(true);
             basicApartmentButton.SetActive(true);
             luxuryApartmentButton.SetActive(true);
             basicHouseButton.SetActive(true);
+            luxuryHouseButton.SetActive(true);
         }
         else if (teacher == true)
         {
@@ -813,17 +956,19 @@ public class IntroGameController : MonoBehaviour
             waiterScreen.SetActive(false);
             cashierScreen.SetActive(false);
             fryCookScreen.SetActive(false);
-            callCenterCustomerServiceScreen.SetActive(false);
+            customerServiceAgentScreen.SetActive(false);
             teacherScreen.SetActive(true);
-            callCenterLicensedSalesScreen.SetActive(false);
+            licensedSalesAgentScreen.SetActive(false);
             programmerScreen.SetActive(false);
+            unknownJobScreen.SetActive(false);
             doctorScreen.SetActive(false);
+            lawyerScreen.SetActive(false);
 
             jobSelected = "Teacher";
             jobNow = 5;
 
             //Setting Pay
-            switch (jobNow)
+            switch (educationNow)
             {
                 case 1:
                     biweeklySalary1990 = 0.00;
@@ -849,29 +994,32 @@ public class IntroGameController : MonoBehaviour
 
             //Sets Available Housing
             livingWithParentsButton.SetActive(true);
-            crappyApartmentButton.SetActive(true);
+            livingWithRoommatesButton.SetActive(true);
             basicApartmentButton.SetActive(true);
             luxuryApartmentButton.SetActive(true);
             basicHouseButton.SetActive(true);
+            luxuryHouseButton.SetActive(true);
         }
-        else if (callCenterLicensedSales == true)
+        else if (licensedSalesAgent == true)
         {
             //Changes Panel View
             jobScreen.SetActive(false);
             waiterScreen.SetActive(false);
             cashierScreen.SetActive(false);
             fryCookScreen.SetActive(false);
-            callCenterCustomerServiceScreen.SetActive(false);
+            customerServiceAgentScreen.SetActive(false);
             teacherScreen.SetActive(false);
-            callCenterLicensedSalesScreen.SetActive(true);
+            licensedSalesAgentScreen.SetActive(true);
             programmerScreen.SetActive(false);
+            unknownJobScreen.SetActive(false);
             doctorScreen.SetActive(false);
+            lawyerScreen.SetActive(false);
 
             jobSelected = "Licensed Sales Agent";
             jobNow = 6;
 
             //Setting Pay
-            switch (jobNow)
+            switch (educationNow)
             {
                 case 1:
                     biweeklySalary1990 = 0.00;
@@ -897,10 +1045,11 @@ public class IntroGameController : MonoBehaviour
 
             //Sets Available Housing
             livingWithParentsButton.SetActive(true);
-            crappyApartmentButton.SetActive(true);
+            livingWithRoommatesButton.SetActive(true);
             basicApartmentButton.SetActive(true);
             luxuryApartmentButton.SetActive(true);
             basicHouseButton.SetActive(true);
+            luxuryHouseButton.SetActive(true);
         }
         else if (programmer == true)
         {
@@ -909,17 +1058,19 @@ public class IntroGameController : MonoBehaviour
             waiterScreen.SetActive(false);
             cashierScreen.SetActive(false);
             fryCookScreen.SetActive(false);
-            callCenterCustomerServiceScreen.SetActive(false);
+            customerServiceAgentScreen.SetActive(false);
             teacherScreen.SetActive(false);
-            callCenterLicensedSalesScreen.SetActive(false);
+            licensedSalesAgentScreen.SetActive(false);
             programmerScreen.SetActive(true);
+            unknownJobScreen.SetActive(false);
             doctorScreen.SetActive(false);
+            lawyerScreen.SetActive(false);
 
             jobSelected = "Programmer";
             jobNow = 7;
 
             //Setting Pay
-            switch (jobNow)
+            switch (educationNow)
             {
                 case 1:
                     biweeklySalary1990 = 0.00;
@@ -945,10 +1096,62 @@ public class IntroGameController : MonoBehaviour
 
             //Sets Available Housing
             livingWithParentsButton.SetActive(true);
-            crappyApartmentButton.SetActive(true);
+            livingWithRoommatesButton.SetActive(true);
             basicApartmentButton.SetActive(true);
             luxuryApartmentButton.SetActive(true);
             basicHouseButton.SetActive(true);
+            luxuryHouseButton.SetActive(true);
+        }
+        else if (unknownJob == true)
+        {
+            //Changes Panel View
+            jobScreen.SetActive(false);
+            waiterScreen.SetActive(false);
+            cashierScreen.SetActive(false);
+            fryCookScreen.SetActive(false);
+            customerServiceAgentScreen.SetActive(false);
+            teacherScreen.SetActive(false);
+            licensedSalesAgentScreen.SetActive(false);
+            programmerScreen.SetActive(false);
+            unknownJobScreen.SetActive(true);
+            doctorScreen.SetActive(false);
+            lawyerScreen.SetActive(false);
+
+            jobSelected = "Unknown Job";
+            jobNow = 8;
+
+            //Setting Pay
+            switch (educationNow)
+            {
+                case 1:
+                    biweeklySalary1990 = 0.00;
+                    biweeklySalary2020 = 0.00;
+                    break;
+                case 2:
+                    biweeklySalary1990 = 0.00;
+                    biweeklySalary2020 = 0.00;
+                    break;
+                case 3:
+                    biweeklySalary1990 = 0.00;
+                    biweeklySalary2020 = 0.00;
+                    break;
+                case 4:
+                    biweeklySalary1990 = 0.00;
+                    biweeklySalary2020 = 0.00;
+                    break;
+                case 5:
+                    biweeklySalary1990 = 0.00;
+                    biweeklySalary2020 = 0.00;
+                    break;
+            }
+
+            //Sets Available Housing
+            livingWithParentsButton.SetActive(true);
+            livingWithRoommatesButton.SetActive(true);
+            basicApartmentButton.SetActive(true);
+            luxuryApartmentButton.SetActive(true);
+            basicHouseButton.SetActive(true);
+            luxuryHouseButton.SetActive(true);
         }
         else if (doctor == true)
         {
@@ -957,17 +1160,19 @@ public class IntroGameController : MonoBehaviour
             waiterScreen.SetActive(false);
             cashierScreen.SetActive(false);
             fryCookScreen.SetActive(false);
-            callCenterCustomerServiceScreen.SetActive(false);
+            customerServiceAgentScreen.SetActive(false);
             teacherScreen.SetActive(false);
-            callCenterLicensedSalesScreen.SetActive(false);
+            licensedSalesAgentScreen.SetActive(false);
             programmerScreen.SetActive(false);
+            unknownJobScreen.SetActive(false);
             doctorScreen.SetActive(true);
+            lawyerScreen.SetActive(false);
 
             jobSelected = "Doctor";
-            jobNow = 8;
+            jobNow = 9;
 
             //Setting Pay
-            switch (jobNow)
+            switch (educationNow)
             {
                 case 1:
                     biweeklySalary1990 = 0.00;
@@ -993,10 +1198,62 @@ public class IntroGameController : MonoBehaviour
 
             //Sets Available Housing
             livingWithParentsButton.SetActive(true);
-            crappyApartmentButton.SetActive(true);
+            livingWithRoommatesButton.SetActive(true);
             basicApartmentButton.SetActive(true);
             luxuryApartmentButton.SetActive(true);
             basicHouseButton.SetActive(true);
+            luxuryHouseButton.SetActive(true);
+        }
+        else if (lawyer == true)
+        {
+            //Changes Panel View
+            jobScreen.SetActive(false);
+            waiterScreen.SetActive(false);
+            cashierScreen.SetActive(false);
+            fryCookScreen.SetActive(false);
+            customerServiceAgentScreen.SetActive(false);
+            teacherScreen.SetActive(false);
+            licensedSalesAgentScreen.SetActive(false);
+            programmerScreen.SetActive(false);
+            unknownJobScreen.SetActive(false);
+            doctorScreen.SetActive(false);
+            lawyerScreen.SetActive(true);
+
+            jobSelected = "Lawyer";
+            jobNow = 10;
+
+            //Setting Pay
+            switch (educationNow)
+            {
+                case 1:
+                    biweeklySalary1990 = 0.00;
+                    biweeklySalary2020 = 0.00;
+                    break;
+                case 2:
+                    biweeklySalary1990 = 0.00;
+                    biweeklySalary2020 = 0.00;
+                    break;
+                case 3:
+                    biweeklySalary1990 = 0.00;
+                    biweeklySalary2020 = 0.00;
+                    break;
+                case 4:
+                    biweeklySalary1990 = 0.00;
+                    biweeklySalary2020 = 0.00;
+                    break;
+                case 5:
+                    biweeklySalary1990 = 0.00;
+                    biweeklySalary2020 = 0.00;
+                    break;
+            }
+
+            //Sets Available Housing
+            livingWithParentsButton.SetActive(true);
+            livingWithRoommatesButton.SetActive(true);
+            basicApartmentButton.SetActive(true);
+            luxuryApartmentButton.SetActive(true);
+            basicHouseButton.SetActive(true);
+            luxuryHouseButton.SetActive(true);
         }
     }
 
@@ -1018,9 +1275,9 @@ public class IntroGameController : MonoBehaviour
         ChooseJob();
     }
 
-    public void ChooseJobCallCenterAgent()
+    public void ChooseJobCustomerServiceAgent()
     {
-        callCenterCustomerService = true;
+        customerServiceAgent = true;
         ChooseJob();
     }
 
@@ -1030,9 +1287,9 @@ public class IntroGameController : MonoBehaviour
         ChooseJob();
     }
 
-    public void ChooseJobCallCenterLicensedAgent()
+    public void ChooseJobLicensedSalesAgent()
     {
-        callCenterLicensedSales = true;
+        licensedSalesAgent = true;
         ChooseJob();
     }
 
@@ -1042,9 +1299,21 @@ public class IntroGameController : MonoBehaviour
         ChooseJob();
     }
 
+    public void ChooseJobUnknown()
+    {
+        unknownJob = true;
+        ChooseJob();
+    }
+
     public void ChooseJobDoctor()
     {
         doctor = true;
+        ChooseJob();
+    }
+
+    public void ChooseJobLawyer()
+    {
+        lawyer = true;
         ChooseJob();
     }
 
@@ -1057,81 +1326,113 @@ public class IntroGameController : MonoBehaviour
         {
             //Changing Panel View
             housingScreen.SetActive(false);
-            livingWithparentsScreen.SetActive(true);
-            crappyApartmentScreen.SetActive(false);
+            livingWithParentsScreen.SetActive(true);
+            livingWithRoommatesScreen.SetActive(false);
             basicApartmentScreen.SetActive(false);
             luxuryApartmentScreen.SetActive(false);
-            ownHouseScreen.SetActive(false);
+            basicHouseScreen.SetActive(false);
+            luxuryHouseScreen.SetActive(false);
 
             housingSelected = "Living With Parents";
             houseNow = 1;
-
-            rentCost1990 = 0.00;
-            rentCost2020 = 0.00;
         }
-        else if (crappyApartment == true)
+        else if (livingWithRoommates == true)
         {
             //Changing Panel View
             housingScreen.SetActive(false);
-            livingWithparentsScreen.SetActive(false);
-            crappyApartmentScreen.SetActive(true);
+            livingWithParentsScreen.SetActive(false);
+            livingWithRoommatesScreen.SetActive(true);
             basicApartmentScreen.SetActive(false);
             luxuryApartmentScreen.SetActive(false);
-            ownHouseScreen.SetActive(false);
+            basicHouseScreen.SetActive(false);
+            luxuryHouseScreen.SetActive(false);
 
-            housingSelected = "Crappy Apartment";
+            housingSelected = "Living With Rommates";
             houseNow = 2;
-
-            rentCost1990 = 0.00;
-            rentCost2020 = 0.00;
         }
         else if (basicApartment == true)
         {
             //Changing Panel View
             housingScreen.SetActive(false);
-            livingWithparentsScreen.SetActive(false);
-            crappyApartmentScreen.SetActive(false);
+            livingWithParentsScreen.SetActive(false);
+            livingWithRoommatesScreen.SetActive(false);
             basicApartmentScreen.SetActive(true);
             luxuryApartmentScreen.SetActive(false);
-            ownHouseScreen.SetActive(false);
+            basicHouseScreen.SetActive(false);
+            luxuryHouseScreen.SetActive(false);
 
             housingSelected = "Basic Apartment";
             houseNow = 3;
-
-            rentCost1990 = 0.00;
-            rentCost2020 = 0.00;
         }
         else if (luxuryApartment == true)
         {
             //Changing Panel View
             housingScreen.SetActive(false);
-            livingWithparentsScreen.SetActive(false);
-            crappyApartmentScreen.SetActive(false);
+            livingWithParentsScreen.SetActive(false);
+            livingWithRoommatesScreen.SetActive(false);
             basicApartmentScreen.SetActive(false);
             luxuryApartmentScreen.SetActive(true);
-            ownHouseScreen.SetActive(false);
+            basicHouseScreen.SetActive(false);
+            luxuryHouseScreen.SetActive(false);
 
             housingSelected = "Luxury Apartment";
             houseNow = 4;
-
-            rentCost1990 = 0.00;
-            rentCost2020 = 0.00;
         }
-        else if (ownHouse == true)
+        else if (basicHouse == true)
         {
             //Changing Panel View
             housingScreen.SetActive(false);
-            livingWithparentsScreen.SetActive(false);
-            crappyApartmentScreen.SetActive(false);
+            livingWithParentsScreen.SetActive(false);
+            livingWithRoommatesScreen.SetActive(false);
             basicApartmentScreen.SetActive(false);
             luxuryApartmentScreen.SetActive(false);
-            ownHouseScreen.SetActive(true);
+            basicHouseScreen.SetActive(true);
+            luxuryHouseScreen.SetActive(false);
 
-            housingSelected = "Own Home";
+            housingSelected = "Basic House";
             houseNow = 5;
+        }
+        else if (luxuryHouse == true)
+        {
+            //Changing Panel View
+            housingScreen.SetActive(false);
+            livingWithParentsScreen.SetActive(false);
+            livingWithRoommatesScreen.SetActive(false);
+            basicApartmentScreen.SetActive(false);
+            luxuryApartmentScreen.SetActive(false);
+            basicHouseScreen.SetActive(false);
+            luxuryHouseScreen.SetActive(true);
 
-            rentCost1990 = 0.00;
-            rentCost2020 = 0.00;
+            housingSelected = "Luxury House";
+            houseNow = 6;
+        }
+
+        switch (houseNow)
+        {
+            case 1:
+                rentCost1990 = 0.00;
+                rentCost2020 = 0.00;
+                break;
+            case 2:
+                rentCost1990 = 0.00;
+                rentCost2020 = 0.00;
+                break;
+            case 3:
+                rentCost1990 = 0.00;
+                rentCost2020 = 0.00;
+                break;
+            case 4:
+                rentCost1990 = 0.00;
+                rentCost2020 = 0.00;
+                break;
+            case 5:
+                mortgageCost1990 = 0.00;
+                mortgageCost2020 = 0.00;
+                break;
+            case 6:
+                mortgageCost1990 = 0.00;
+                mortgageCost2020 = 0.00;
+                break;
         }
     }
     
@@ -1140,9 +1441,9 @@ public class IntroGameController : MonoBehaviour
         livingWithParents = true;
         ChooseHousing();
     }
-    public void ChooseHousingCrappyApartment()
+    public void ChooseHousingLivingWithRoommates()
     {
-        crappyApartment = true;
+        livingWithRoommates = true;
         ChooseHousing();
     }
 
@@ -1158,10 +1459,269 @@ public class IntroGameController : MonoBehaviour
         ChooseHousing();
     }
 
-    public void ChooseHousingOwnHouse()
+    public void ChooseHousingBasicHouse()
     {
-        ownHouse = true;
+        basicHouse = true;
         ChooseHousing();
+    }
+
+    public void ChooseHousingLuxuryHouse()
+    {
+        luxuryHouse = true;
+        ChooseHousing();
+    }
+
+
+    //Selecting Utilities
+    public void ChooseUtilitiesElectric()
+    {
+        utilityElectric = true;
+        utilityElectric1990Selected = "Electric";
+        utilityElectric2020Selected = "Electric";
+        utilityElectricCost1990 = Random.Range(50, 300);
+        utilityElectricCost2020 = Random.Range(50, 300);
+        utilitiesElectricScreen.SetActive(true);
+        utilitiesScreen.SetActive(false);
+    }
+
+    public void ChooseUtilitiesWater()
+    {
+        utilityWater = true;
+        utilityWater1990Selected = "Water";
+        utilityWater2020Selected = "Water";
+        utilityWaterCost1990 = Random.Range(0, 10);
+        utilityWaterCost2020 = Random.Range(0, 10);
+        utilitiesWaterScreen.SetActive(true);
+        utilitiesScreen.SetActive(false);
+    }
+
+    public void ChooseUtilitiesCommunications()
+    {
+        utilitiesCommunicationsScreen.SetActive(true);
+
+        utilitiesScreen.SetActive(false);
+    }
+
+    public void ChooseUtilitiesCommunicationsHousePhone1990()
+    {
+        utilityCommunications1990 = true;
+        housePhone1990 = true;
+        utilityCommunications1990Selected = "House Phone";
+        utilityCommunicationsCost1990 = 0.00;
+        housePhone1990Screen.SetActive(true);
+        utilitiesCommunicationsScreen.SetActive(false);
+        basicCellPhone1990Button.SetActive(false);
+        BackFromCommunications();
+    }
+
+    public void ChooseUtilitiesCommunicationsHousePhone2020()
+    {
+        utilityCommunications2020 = true;
+        housePhone2020 = true;
+        utilityCommunications2020Selected = "House Phone";
+        utilityCommunicationsCost2020 = 0.00;
+        housePhone2020Screen.SetActive(true);
+        utilitiesCommunicationsScreen.SetActive(false);
+        basicCellPhone2020Button.SetActive(false);
+        unlimitedCellPhone2020Button.SetActive(false);
+        BackFromCommunications();
+    }
+
+    public void ChooseUtilitiesCommunicationsBasicCellPhone1990()
+    {
+        utilityCommunications1990 = true;
+        basicCellPhone1990 = true;
+        utilityCommunications1990Selected = "Basic Cell Phone";
+        utilityCommunicationsCost1990 = 0.00;
+        basicCellPhone1990Screen.SetActive(true);
+        utilitiesCommunicationsScreen.SetActive(false);
+        housePhone1990Button.SetActive(false);
+        BackFromCommunications();
+    }
+
+    public void ChooseUtilitiesCommunicationsBasicCellPhone2020()
+    {
+        utilityCommunications2020 = true;
+        basicCellPhone2020 = true;
+        utilityCommunications2020Selected = "Basic Cell Phone";
+        utilityCommunicationsCost2020 = 0.00;
+        basicCellPhone2020Screen.SetActive(true);
+        utilitiesCommunicationsScreen.SetActive(false);
+        housePhone2020Button.SetActive(false);
+        unlimitedCellPhone2020Button.SetActive(false);
+        BackFromCommunications();
+    }
+
+    public void ChooseUtilitiesCommunicationsUnlimitedCellPhone2020()
+    {
+        utilityCommunications2020 = true;
+        unlimitedCellPhone2020 = true;
+        utilityCommunications2020Selected = "Unlimited Cell Phone";
+        utilityCommunicationsCost2020 = 0.00;
+        unlimitedCellPhone2020Screen.SetActive(true);
+        utilitiesCommunicationsScreen.SetActive(false);
+        housePhone2020Button.SetActive(false);
+        basicCellPhone2020Button.SetActive(false);
+        BackFromCommunications();
+    }
+
+    public void ChooseUtilitiesEntertainment()
+    {
+        utilitiesEntertainmentScreen.SetActive(true);
+
+        utilitiesScreen.SetActive(false);
+    }
+
+    public void ChooseUtilitiesEntertainmentBasicCable1990()
+    {
+        utilityEntertainment1990 = true;
+        basicCable1990 = true;
+        utilityEntertainment1990Selected = "Basic Cable";
+        utilityEntertainmentCost1990 = 0.00;
+        basicCable1990Screen.SetActive(true);
+        utilitiesEntertainmentScreen.SetActive(false);
+        premiumCable1990Button.SetActive(false);
+        BackFromEntertainment();
+    }
+
+    public void ChooseUtilitiesEntertainmentBasicCable2020()
+    {
+        utilityEntertainment2020 = true;
+        basicCable2020 = true;
+        utilityEntertainment2020Selected = "Basic Cable";
+        utilityEntertainmentCost2020 = 0.00;
+        basicCable2020Screen.SetActive(true);
+        utilitiesEntertainmentScreen.SetActive(false);
+        premiumCable2020Button.SetActive(false);
+        streamingService2020Button.SetActive(false);
+        BackFromEntertainment();
+    }
+
+    public void ChooseUtilitiesEntertainmentPremiumCable1990()
+    {
+        utilityEntertainment1990 = true;
+        premiumCable1990 = true;
+        utilityEntertainment1990Selected = "Premium Cable";
+        utilityEntertainmentCost1990 = 0.00;
+        premiumCable1990Screen.SetActive(true);
+        utilitiesEntertainmentScreen.SetActive(false);
+        basicCable1990Button.SetActive(false);
+        BackFromEntertainment();
+    }
+
+    public void ChooseUtilitiesEntertainmentPremiumCable2020()
+    {
+        utilityEntertainment2020 = true;
+        premiumCable2020 = true;
+        utilityEntertainment2020Selected = "Premium Cable";
+        utilityEntertainmentCost2020 = 0.00;
+        premiumCable2020Screen.SetActive(true);
+        utilitiesEntertainmentScreen.SetActive(false);
+        basicCable2020Button.SetActive(false);
+        streamingService2020Button.SetActive(false);
+        BackFromEntertainment();
+    }
+
+    public void ChooseUtilitiesEntertainmentStreamingService()
+    {
+        utilityEntertainment2020 = true;
+        streamingService2020 = true;
+        utilityEntertainment2020Selected = "Streaming Service";
+        utilityEntertainmentCost2020 = 0.00;
+        streamingService2020Screen.SetActive(true);
+        utilitiesEntertainmentScreen.SetActive(false);
+        basicCable2020Button.SetActive(false);
+        premiumCable2020Button.SetActive(false);
+        BackFromEntertainment();
+    }
+
+    public void ChooseUtilitiesInternet()
+    {
+        utilitiesInternetScreen.SetActive(true);
+
+        utilitiesScreen.SetActive(false);
+    }
+
+    public void ChooseUtilitiesInternet50MB()
+    {
+        utilityInternet2020 = true;
+        mb50Internet = true;
+        utilityInternet2020Selected = "50MB/s Internet";
+        utilityInternetCost2020 = 0.00;
+        mb50Internet2020Screen.SetActive(true);
+        utilitiesInternetScreen.SetActive(false);
+        mb100Internet2020Button.SetActive(false);
+        mb200Internet2020Button.SetActive(false);
+        BackFromInternet();
+    }
+
+    public void ChooseUtilitiesInternet100MB()
+    {
+        utilityInternet2020 = true;
+        mb100Internet = true;
+        utilityInternet2020Selected = "100MB/s Internet";
+        utilityInternetCost2020 = 0.00;
+        mb100Internet2020Screen.SetActive(true);
+        utilitiesInternetScreen.SetActive(false);
+        mb50Internet2020Button.SetActive(false);
+        mb200Internet2020Button.SetActive(false);
+        BackFromInternet();
+    }
+
+    public void ChooseUtilitiesInternet200MB()
+    {
+        utilityInternet2020 = true;
+        mb200Internet = true;
+        utilityInternet2020Selected = "20MB/s Internet";
+        utilityInternetCost2020 = 0.00;
+        mb200Internet2020Screen.SetActive(true);
+        utilitiesInternetScreen.SetActive(false);
+        mb50Internet2020Button.SetActive(false);
+        mb100Internet2020Button.SetActive(false);
+        BackFromInternet();
+    }
+
+    //Returning From Utilities
+    public void FromGeneralUtilities()
+    {
+        utilitiesElectricScreen.SetActive(false);
+        utilitiesWaterScreen.SetActive(false);
+        utilitiesCommunicationsScreen.SetActive(false);
+        utilitiesEntertainmentScreen.SetActive(false);
+        utilitiesInternetScreen.SetActive(false);
+
+        utilitiesScreen.SetActive(true);
+    }
+
+    public void FromCommunicationsUtilities()
+    {
+        housePhone1990Screen.SetActive(false);
+        housePhone2020Screen.SetActive(false);
+        basicCellPhone1990Screen.SetActive(false);
+        basicCellPhone2020Screen.SetActive(false);
+        unlimitedCellPhone2020Screen.SetActive(false);
+
+        utilitiesCommunicationsScreen.SetActive(true);
+    }
+
+    public void FromEntertainmentUtilities()
+    {
+        basicCable1990Screen.SetActive(false);
+        basicCable2020Screen.SetActive(false);
+        premiumCable1990Screen.SetActive(false);
+        premiumCable2020Screen.SetActive(false);
+        streamingService2020Screen.SetActive(false);
+
+        utilitiesEntertainmentScreen.SetActive(true);
+    }
+
+    public void FromInternetUtilities()
+    {
+        mb50Internet2020Screen.SetActive(false);
+        mb100Internet2020Screen.SetActive(false);
+        mb200Internet2020Screen.SetActive(false);
+
+        utilitiesInternetScreen.SetActive(true);
     }
 
 
@@ -1169,24 +1729,36 @@ public class IntroGameController : MonoBehaviour
     //Selecting Transportation
     public void ChooseTransportation()
     {
-        if (usedCar == true)
+        if (bicycle == true)
         {
             transportationScreen.SetActive(false);
+            bicycleScreen.SetActive(true);
+            usedCarScreen.SetActive(false);
+            newCarScreen.SetActive(false);
+            motorcycleScreen.SetActive(false);
+            busScreen.SetActive(false);
+            trainScreen.SetActive(false);
+
+            transportationSelected = "Bicycle";
+            travelNow = 1;
+        }
+        else if (usedCar == true)
+        {
+            transportationScreen.SetActive(false);
+            bicycleScreen.SetActive(false);
             usedCarScreen.SetActive(true);
             newCarScreen.SetActive(false);
             motorcycleScreen.SetActive(false);
             busScreen.SetActive(false);
             trainScreen.SetActive(false);
 
-            transportationSelected = "Car";
-            travelNow = 1;
-
-            transportationCost1990 = 0.00;
-            transportationCost2020 = 0.00;
+            transportationSelected = "Used Car";
+            travelNow = 2;
         }
         else if (newCar == true)
         {
             transportationScreen.SetActive(false);
+            bicycleScreen.SetActive(false);
             usedCarScreen.SetActive(false);
             newCarScreen.SetActive(true);
             motorcycleScreen.SetActive(false);
@@ -1194,14 +1766,12 @@ public class IntroGameController : MonoBehaviour
             trainScreen.SetActive(false);
 
             transportationSelected = "New Car";
-            travelNow = 2;
-
-            transportationCost1990 = 0.00;
-            transportationCost2020 = 0.00;
+            travelNow = 3;
         }
         else if (motorcycle == true)
         {
             transportationScreen.SetActive(false);
+            bicycleScreen.SetActive(false);
             usedCarScreen.SetActive(false);
             newCarScreen.SetActive(false);
             motorcycleScreen.SetActive(true);
@@ -1209,43 +1779,70 @@ public class IntroGameController : MonoBehaviour
             trainScreen.SetActive(false);
 
             transportationSelected = "Motorcycle";
-            travelNow = 3;
-
-            transportationCost1990 = 0.00;
-            transportationCost2020 = 0.00;
+            travelNow = 4;
         }
         else if (bus == true)
         {
             transportationScreen.SetActive(false);
+            bicycleScreen.SetActive(false);
             usedCarScreen.SetActive(false);
             newCarScreen.SetActive(false);
             motorcycleScreen.SetActive(false);
             busScreen.SetActive(true);
             trainScreen.SetActive(false);
 
-            transportationSelected = "City Bus";
-            travelNow = 4;
-
-            transportationCost1990 = 0.00;
-            transportationCost2020 = 0.00;
+            transportationSelected = "City Bus Transit";
+            travelNow = 5;
         }
         if (train == true)
         {
             transportationScreen.SetActive(false);
+            bicycleScreen.SetActive(false);
             usedCarScreen.SetActive(false);
             newCarScreen.SetActive(false);
             motorcycleScreen.SetActive(false);
             busScreen.SetActive(false);
             trainScreen.SetActive(true);
 
-            transportationSelected = "Train";
-            travelNow = 5;
+            transportationSelected = "Train Transit";
+            travelNow = 6;
+        }
 
-            transportationCost1990 = 0.00;
-            transportationCost2020 = 0.00;
+        switch (travelNow)
+        {
+            case 1:
+                transportationCost1990 = 0.00;
+                transportationCost2020 = 0.00;
+                break;
+            case 2:
+                transportationCost1990 = 0.00;
+                transportationCost2020 = 0.00;
+                break;
+            case 3:
+                transportationCost1990 = 0.00;
+                transportationCost2020 = 0.00;
+                break;
+            case 4:
+                transportationCost1990 = 0.00;
+                transportationCost2020 = 0.00;
+                break;
+            case 5:
+                transportationCost1990 = 0.00;
+                transportationCost2020 = 0.00;
+                break;
+            case 6:
+                transportationCost1990 = 0.00;
+                transportationCost2020 = 0.00;
+                break;
         }
     }
 
+    public void ChooseTransportationBucycle()
+    {
+        bicycle = true;
+        ChooseTransportation();
+    }
+    
     public void ChooseTransportationUsedCar()
     {
         usedCar = true;
@@ -1281,7 +1878,7 @@ public class IntroGameController : MonoBehaviour
     public void ChooseGift()
     {
         giftMoneyScreen1.SetActive(false);
-        giftMoneyScreen2.SetActive(false);
+        giftMoneyScreen2.SetActive(true);
 
         //Random giftrand1 = new Random();
         //giftMoney = giftrand1.Next(1001);
@@ -1345,28 +1942,80 @@ public class IntroGameController : MonoBehaviour
         waiterScreen.SetActive(false);
         cashierScreen.SetActive(false);
         fryCookScreen.SetActive(false);
-        callCenterCustomerServiceScreen.SetActive(false);
+        customerServiceAgentScreen.SetActive(false);
         teacherScreen.SetActive(false);
-        callCenterLicensedSalesScreen.SetActive(false);
+        licensedSalesAgentScreen.SetActive(false);
         programmerScreen.SetActive(false);
+        unknownJobScreen.SetActive(false);
         doctorScreen.SetActive(false);
+        lawyerScreen.SetActive(false);
 
         housingScreen.SetActive(true);
     }
 
+    //Move to Utility Selection Screen
+    public void ToUtilitiesScreen()
+    {
+        housingScreen.SetActive(false);
+        livingWithParentsScreen.SetActive(false);
+        livingWithRoommatesScreen.SetActive(false);
+        basicApartmentScreen.SetActive(false);
+        luxuryApartmentScreen.SetActive(false);
+        basicHouseScreen.SetActive(false);
+        luxuryHouseScreen.SetActive(false);
+
+        utilitiesScreen.SetActive(true);
+    }
+
+    public void BackFromCommunications()
+    {
+        if (utilityCommunications1990 == true && utilityCommunications2020 == true)
+        {
+            backFromCommunicationsButton.SetActive(true);
+        }
+    }
+
+    public void BackFromEntertainment()
+    {
+        if (utilityEntertainment1990 == true && utilityEntertainment2020 == true)
+        {
+            backFromEntertainmentButton.SetActive(true);
+        }
+    }
+
+    public void BackFromInternet()
+    {
+        if (utilityInternet2020 == true)
+        {
+            backFromInternetButton.SetActive(true);
+        }
+    }
+    
     //Move to Transportation Selection Screen
     public void ToTransportationScreen()
     {
-        housingScreen.SetActive(false);
-        livingWithparentsScreen.SetActive(false);
-        crappyApartmentScreen.SetActive(false);
-        basicApartmentScreen.SetActive(false);
-        luxuryApartmentScreen.SetActive(false);
-        ownHouseScreen.SetActive(false);
-
+        utilitiesScreen.SetActive(false);
+        utilitiesElectricScreen.SetActive(false);
+        utilitiesWaterScreen.SetActive(false);
+        utilitiesCommunicationsScreen.SetActive(false);
+        housePhone1990Screen.SetActive(false);
+        housePhone2020Screen.SetActive(false);
+        basicCellPhone1990Screen.SetActive(false);
+        basicCellPhone2020Screen.SetActive(false);
+        unlimitedCellPhone2020Screen.SetActive(false);
+        utilitiesEntertainmentScreen.SetActive(false);
+        basicCable1990Screen.SetActive(false);
+        basicCable2020Screen.SetActive(false);
+        premiumCable2020Screen.SetActive(false);
+        streamingService2020Screen.SetActive(false);
+        utilitiesInternetScreen.SetActive(false);
+        mb50Internet2020Screen.SetActive(false);
+        mb100Internet2020Screen.SetActive(false);
+        mb200Internet2020Screen.SetActive(false);
+        
         transportationScreen.SetActive(true);
     }
-    
+
     //Move to Gift Selection Screen
     public void ToGiftScreen()
     {
@@ -1380,7 +2029,7 @@ public class IntroGameController : MonoBehaviour
         giftMoneyScreen1.SetActive(true);
     }
 
-    //Movee to Intro Summary Screen
+    //Move to Intro Summary Screen
     public void ToSummaryScreen()
     {
         giftMoneyScreen2.SetActive(false);
@@ -1388,9 +2037,33 @@ public class IntroGameController : MonoBehaviour
         introSummaryScreen.SetActive(true);
     }
 
+    public void ToSummaryScreen1990()
+    {
+        introSummaryScreen.SetActive(false);
+
+        introSummary1990Screen.SetActive(true);
+        introSummary2020Screen.SetActive(false);
+    }
+
+    public void ToSummaryScreen2020()
+    {
+        introSummaryScreen.SetActive(false);
+
+        introSummary1990Screen.SetActive(false);
+        introSummary2020Screen.SetActive(true);
+    }
+
+    public void ReturnToSummaryScreen()
+    {
+        introSummaryScreen.SetActive(true);
+
+        introSummary1990Screen.SetActive(false);
+        introSummary2020Screen.SetActive(false);
+    }
 
 
-    //Quit Game at end of level
+
+    //Quit Game at end of Level
     public void QuitGame()
     {
         //SceneManager.LoadScene(MainMenu);
