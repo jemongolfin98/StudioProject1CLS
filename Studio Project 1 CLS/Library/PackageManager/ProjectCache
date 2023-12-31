@@ -6,7 +6,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638345662204697339
+      ticks: 638351571455377015
     m_Hash: 3826453600
   m_LockFileStatus:
     m_FilePath: C:/Users/theja/git/SchoolProjects/Digital Media MA/StudioProject1/StudioProject1CLS/Studio
@@ -15,7 +15,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638345662204849164
+      ticks: 638351571455493040
     m_Hash: 1862447665
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -4477,6 +4477,7 @@ m_ResolvedPackages:
     - 2.2.0
     - 2.2.1
     - 2.3.0-exp.1
+    - 2.3.0-pre.3
     compatible:
     - 1.2.4
     - 1.3.1
@@ -4492,6 +4493,7 @@ m_ResolvedPackages:
     - 2.2.0
     - 2.2.1
     - 2.3.0-exp.1
+    - 2.3.0-pre.3
     recommended: 1.2.4
     deprecated: []
   dependencies:
@@ -4688,10 +4690,12 @@ m_ResolvedPackages:
     - 1.8.7
     - 1.8.8
     - 1.8.9
+    - 1.8.10
     compatible:
     - 1.8.8
     - 1.8.9
-    recommended: 1.8.9
+    - 1.8.10
+    recommended: 1.8.10
     deprecated: []
   dependencies:
   - name: com.unity.mathematics
