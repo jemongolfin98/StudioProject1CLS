@@ -1,7 +1,15 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AudioManager
+    - AudioSettings
+    - InkExample
     - IntroGameController
+    - MainMenu
+    - MusicPlayerScript
+    InkEditor.dll:
+    - Ink.UnityIntegration.InkCompiler
+    - Ink.UnityIntegration.InkLibrary
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
@@ -51,7 +59,12 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
+    - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
@@ -72,6 +85,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
+    - UnityEngine.RectOffset
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
@@ -84,8 +98,83 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.FontData
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.ScrollRect/ScrollRectEvent
+    - UnityEngine.UI.Scrollbar/ScrollEvent
+    - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: AudioManager
+    methodName: UpdateSound
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: Options
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: QuitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: BackToOptions
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: BackToCredits
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: BackToCredits
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: CreditsDevelopers
+  - assembly: Assembly-CSharp
+    fullTypeName: AudioManager
+    methodName: UpdateSound
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: PlayGame
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: Credits
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: CreditsCommittee
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: BackToMainMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: StartStory
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: CreditsDisclaimer
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: BackToCredits
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: Story
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: Records
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: BackToMainMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: BackToCredits
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: CreditsMusic
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: BackToMainMenuFromStory
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: BackToMainMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToCurrentMoneySimulation
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToGiftMoneyScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: FromEntertainmentUtilities
@@ -94,10 +183,10 @@ ScriptsOnlyBuild:
     methodName: PayUtilitiesWater1990
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ChooseUtilitiesInternet
+    methodName: ChooseJobWaiter
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ChooseJobCashier
+    methodName: RandomEvent01a
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ChooseUtilitiesCommunicationsHousePhone1990
@@ -109,6 +198,9 @@ ScriptsOnlyBuild:
     methodName: ChooseRaceOtherDescent
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
+    methodName: RandomEvent06bProgrammer
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
     methodName: ToUtilitiesScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
@@ -118,16 +210,19 @@ ScriptsOnlyBuild:
     methodName: ToPayUtilitiesElectricity
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: FromCommunicationsUtilities
-  - assembly: Assembly-CSharp
-    fullTypeName: IntroGameController
-    methodName: ToPayGroceries
-  - assembly: Assembly-CSharp
-    fullTypeName: IntroGameController
-    methodName: ToEducationScreen
+    methodName: RandomEvent10a
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ChooseUtilitiesCommunications
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: FromCommunicationsUtilities
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToPayFood
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToToEducationScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ToMonthSummary
@@ -139,13 +234,19 @@ ScriptsOnlyBuild:
     methodName: ReturnToSummaryScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ChooseJobFryCook
+    methodName: ChooseJobCashier
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ChooseJobDoctor
+    methodName: ChooseJobLawyer
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ToPayDay
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEvent13a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ChooseUtilitiesInternet
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ToPlayerStats1990
@@ -154,19 +255,25 @@ ScriptsOnlyBuild:
     methodName: ChooseHousingLivingWithRoommates
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: FromGeneralUtilities
+    methodName: RandomEvent06bTeacher
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: StartSimulation
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
+    methodName: RandomEvent10a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEvent05a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
     methodName: ChooseHousingLivingWithParents
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToEducationScreen
+    methodName: ToToEducationScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ChooseUtilitiesInternet200MB
+    methodName: ChooseUtilitiesInternet200MB2020
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: FromCommunicationsUtilities
@@ -178,7 +285,19 @@ ScriptsOnlyBuild:
     methodName: ToResumeSimulation
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
+    methodName: RandomEvent02a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
     methodName: PayUtilitiesInternet1990
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEvent16a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToCurrentMoneySimulation
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToMainMenu
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ChooseJobLicensedSalesAgent
@@ -190,13 +309,13 @@ ScriptsOnlyBuild:
     methodName: FromInternetUtilities
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToHousingScreen
+    methodName: ToToHousingScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToHousingScreen
+    methodName: ToToHousingScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: BackFromPayGroceries
+    methodName: BackFromPayFood
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ToUtilitiesScreen
@@ -205,13 +324,37 @@ ScriptsOnlyBuild:
     methodName: PayHousing
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToJobScreen
+    methodName: RandomEvent06bLawyer
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToGiftScreen
+    methodName: ToToJobScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToJobScreen
+    methodName: RandomEvent03a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToCurrentMoneySimulation
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: FromInternetUtilities
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: BackToSimulation
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToToGiftMoneyScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToToJobScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToNextQuarter
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEvent06bLSA
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEvent06bCashier
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ChooseTransportationTrain
@@ -220,28 +363,37 @@ ScriptsOnlyBuild:
     methodName: CollectPayCheck
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
+    methodName: ToCurrentMoneySummary
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEvent07a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
     methodName: ChooseGenderMale
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToHousingScreen
+    methodName: ToToHousingScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: BackFromPayUtilities
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToQuitSimulation
+    methodName: ToMainMenu
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: GameComplete2
+    methodName: ToMainMenu
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToIntroSummaryScreen
+    methodName: ToToIntroSummaryScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: FromEntertainmentUtilities
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: FromEntertainmentUtilities
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: FromEntertainmentUtilities
+    methodName: RandomEvent18a
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: BackFromPayUtilitiesInternet
@@ -250,64 +402,97 @@ ScriptsOnlyBuild:
     methodName: ChooseUtilitiesEntertainmentBasicCable2020
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
+    methodName: RandomEvent14a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
     methodName: ChooseUtilitiesCommunicationsBasicCellPhone2020
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToEducationScreen
-  - assembly: Assembly-CSharp
-    fullTypeName: IntroGameController
-    methodName: FromGeneralUtilities
+    methodName: ToToEducationScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ToIntroSummaryScreen2020
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToHousingScreen
+    methodName: ToToHousingScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ChooseUtilitiesEntertainmentStreamingService
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToHousingScreen
+    methodName: RandomTransportationSelection
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToEducationScreen
+    methodName: FromInternetUtilities
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToGiftScreen
+    methodName: ToToHousingScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: PayGroceriesFastFood
+    methodName: ToToEducationScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ChooseUtilitiesInternetPremiumDialUp1990
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToToGiftMoneyScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: PayFoodGroceries
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ChooseGift
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToGiftScreen
+    methodName: ToToGiftMoneyScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ChooseTransportationUsedCar
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ChooseUtilitiesInternet50MB
+    methodName: ToTasks
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ChooseJobCustomerServiceAgent
+    methodName: ChooseUtilitiesInternet50MB2020
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToPayUtilitiesCommunications
-  - assembly: Assembly-CSharp
-    fullTypeName: IntroGameController
-    methodName: ChooseTransportationBucycle
-  - assembly: Assembly-CSharp
-    fullTypeName: IntroGameController
-    methodName: ToPayUtilitiesWater
+    methodName: BackFromRandomEvents
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ChooseUtilitiesElectric
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ChooseEducationPhDDegree
+    methodName: RandomEvent11bNewCar
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ChooseJobCustomerServiceAgent
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToCurrentMoneySimulation
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEvent10a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToPayUtilitiesCommunications
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ChooseTransportationBicycle
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToPayUtilitiesWater
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEvent08a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToCurrentMoneySummary
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEvent11bUsedCar
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ChooseEducationAdvancedDegree
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: FromEntertainmentUtilities
@@ -319,10 +504,13 @@ ScriptsOnlyBuild:
     methodName: ChooseGenderFemale
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
+    methodName: RandomEvent06a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
     methodName: ChooseHousingLuxuryHouse
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToRaceScreen
+    methodName: ToToRaceScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ToUtilitiesScreen
@@ -334,28 +522,37 @@ ScriptsOnlyBuild:
     methodName: ToPayHousing
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ChooseJobUnknown
+    methodName: ChooseJobEngineer
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: FromGeneralUtilities
+    methodName: ToToGiftMoneyScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToGiftScreen
+    methodName: RandomEvent10a
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToEducationScreen
+    methodName: ToToEducationScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ChooseUtilitiesInternetBasicDialUp1990
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: BackFromPayUtilitiesWater
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToRaceScreen
+    methodName: ToToRaceScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEvent11bBus
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToIntroSummaryScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ChooseUtilitiesCommunicationsUnlimitedCellPhone2020
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToGiftScreen
+    methodName: ToToGiftMoneyScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ToPayUtilitiesEntertainment
@@ -367,7 +564,16 @@ ScriptsOnlyBuild:
     methodName: ChooseEducationHighSchoolDiploma
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
+    methodName: RandomEvent06bEngineer
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomGenderSelection
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
     methodName: FromCommunicationsUtilities
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToCurrentMoneySummary
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ChooseRaceNativeAmericanDescent
@@ -376,40 +582,58 @@ ScriptsOnlyBuild:
     methodName: PayUtilitiesEntertainment2020
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
+    methodName: RandomEvent11a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
     methodName: PayUtilitiesElectricity2020
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ChooseRaceAsianDescent
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToJobScreen
+    methodName: ToToJobScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ChooseUtilitiesEntertainment
+    methodName: ToToJobScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ToNextMonth
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: BackFromPayGroceries
+    methodName: BackFromPayFood
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ChooseRaceAfricanDescent
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
+    methodName: RandomEvent11bBicycle
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
     methodName: BackFromPayUtilitiesCommunications
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ChooseUtilitiesEntertainmentPremiumCable2020
+    methodName: RandomEmploymentSelection
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ToHousingScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
+    methodName: ChooseUtilitiesEntertainmentPremiumCable2020
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEvent06FryCook
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToToHousingScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
     methodName: ToPayUtilitiesInternet
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: GameComplete2
+    methodName: ToMainMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToRaceScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ToPauseSimulation
@@ -424,7 +648,7 @@ ScriptsOnlyBuild:
     methodName: PayUtilitiesElectricity1990
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: GameComplete2
+    methodName: ToMainMenu
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ChooseUtilitiesEntertainmentBasicCable1990
@@ -433,13 +657,34 @@ ScriptsOnlyBuild:
     methodName: ChooseHousingBasicHouse
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
+    methodName: RandomEvent04a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
     methodName: ChooseGenderNoGender
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToHousingScreen
+    methodName: BackFromCurrentMoneySummary
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToToTransportationScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToTransportationScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomHousingSelection
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToGenderScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToToHousingScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ChooseEducationMastersDegree
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ChooseUtilitiesEntertainment
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: PayUtilitiesWater2020
@@ -454,10 +699,16 @@ ScriptsOnlyBuild:
     methodName: ChooseJobProgrammer
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToJobScreen
+    methodName: ToToJobScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEvent06bCSA
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ToIntroSummaryScreen1990
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToFinalSummary
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: FromInternetUtilities
@@ -466,13 +717,28 @@ ScriptsOnlyBuild:
     methodName: ChooseRaceEuropeanDescent
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToTransportationScreen
+    methodName: RandomEvent12a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEvent06bWaiter
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToCurrentMoneySimulation
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ChooseTransportationMotorcycle
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToJobScreen
+    methodName: RandomEvent11bTrain
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToToJobScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEvent10a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEvent06bDoctor
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: PayUtilitiesEntertainment1990
@@ -487,13 +753,22 @@ ScriptsOnlyBuild:
     methodName: BackToSimulation
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
+    methodName: RandomEvent17a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
     methodName: FromCommunicationsUtilities
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: PayGroceriesCooking
+    methodName: DebugRandomIntro
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: BackFromPayGroceries
+    methodName: PayFoodFastFood
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: BackFromPayFood
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEvent11bMotorcycle
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: FromCommunicationsUtilities
@@ -505,22 +780,37 @@ ScriptsOnlyBuild:
     methodName: ToPayTransportation
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
+    methodName: ToCurrentMoneySimulation
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
     methodName: PayUtilitiesInternet2020
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToRaceScreen
+    methodName: ToCurrentMoneySummary
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToGiftScreen
+    methodName: ToToRaceScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToHousingScreen
+    methodName: ToToGiftMoneyScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ChooseUtilitiesInternet100MB
+    methodName: ToToHousingScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToGenderScreen
+    methodName: RandomEvent09a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ChooseUtilitiesWater
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToJobScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ChooseUtilitiesInternet100MB2020
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToToGenderScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: BackFromPayDay
@@ -535,25 +825,40 @@ ScriptsOnlyBuild:
     methodName: ToWeekSummary
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
+    methodName: BackFromRandomEvents
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
     methodName: ChooseHousingBasicApartment
-  - assembly: Assembly-CSharp
-    fullTypeName: IntroGameController
-    methodName: ChooseUtilitiesWater
-  - assembly: Assembly-CSharp
-    fullTypeName: IntroGameController
-    methodName: ChooseUtilitiesCommunicationsBasicCellPhone1990
-  - assembly: Assembly-CSharp
-    fullTypeName: IntroGameController
-    methodName: ToHousingScreen
-  - assembly: Assembly-CSharp
-    fullTypeName: IntroGameController
-    methodName: ReturnToSummaryScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ToEducationScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
+    methodName: RandomRaceSelection
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ChooseUtilitiesCommunicationsBasicCellPhone1990
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToToHousingScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ReturnToSummaryScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEducationSelection
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: ToToEducationScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: RandomEvent15a
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
     methodName: ChooseEducationBachelorsDegree
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: BackFromCurrentMoneySimulation
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: PayTransportation
@@ -562,19 +867,19 @@ ScriptsOnlyBuild:
     methodName: BackFromPayRent
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: PayGroceriesEatingOut
+    methodName: ChooseEducationAssociatesDegree
+  - assembly: Assembly-CSharp
+    fullTypeName: IntroGameController
+    methodName: PayFoodEatingOut
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: PayUtilitiesCommunications1990
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: FromGeneralUtilities
-  - assembly: Assembly-CSharp
-    fullTypeName: IntroGameController
     methodName: FromEntertainmentUtilities
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ChooseJobLawyer
+    methodName: ChooseJobDoctor
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ChooseHousingLuxuryApartment
@@ -583,24 +888,80 @@ ScriptsOnlyBuild:
     methodName: ToUtilitiesScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToHousingScreen
-  - assembly: Assembly-CSharp
-    fullTypeName: IntroGameController
-    methodName: FromGeneralUtilities
+    methodName: ToToHousingScreen
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: ChooseRaceHispanicDescent
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ChooseJobWaiter
+    methodName: ChooseJobFryCook
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
     methodName: BackFromPayTransportation
   - assembly: Assembly-CSharp
     fullTypeName: IntroGameController
-    methodName: ToFinalSummary
+    methodName: ToQuarterSummary
   sceneClasses:
-    Assets/Scenes/Introduction/Intro.unity:
+    Assets/Scenes/Introduction/Game.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1572}
+    - Class: 114
+      Script: {instanceID: 1574}
+    - Class: 114
+      Script: {instanceID: 2912}
+    - Class: 114
+      Script: {instanceID: 3166}
+    - Class: 114
+      Script: {instanceID: 6140}
+    - Class: 114
+      Script: {instanceID: 6486}
+    - Class: 114
+      Script: {instanceID: 6870}
+    - Class: 114
+      Script: {instanceID: 7086}
+    - Class: 114
+      Script: {instanceID: 7332}
+    - Class: 114
+      Script: {instanceID: 7510}
+    - Class: 114
+      Script: {instanceID: 9950}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Introduction/MainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -617,36 +978,54 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1570}
+    - Class: 114
       Script: {instanceID: 1572}
     - Class: 114
-      Script: {instanceID: 2340}
+      Script: {instanceID: 1574}
     - Class: 114
-      Script: {instanceID: 2750}
+      Script: {instanceID: 2358}
     - Class: 114
-      Script: {instanceID: 2876}
+      Script: {instanceID: 2582}
     - Class: 114
-      Script: {instanceID: 3128}
+      Script: {instanceID: 2912}
     - Class: 114
-      Script: {instanceID: 3482}
+      Script: {instanceID: 3166}
     - Class: 114
-      Script: {instanceID: 4622}
+      Script: {instanceID: 3182}
     - Class: 114
-      Script: {instanceID: 4764}
+      Script: {instanceID: 4536}
     - Class: 114
-      Script: {instanceID: 5086}
+      Script: {instanceID: 4710}
     - Class: 114
-      Script: {instanceID: 6010}
+      Script: {instanceID: 4854}
     - Class: 114
-      Script: {instanceID: 6342}
+      Script: {instanceID: 5184}
     - Class: 114
-      Script: {instanceID: 6720}
+      Script: {instanceID: 6040}
     - Class: 114
-      Script: {instanceID: 6934}
+      Script: {instanceID: 6140}
     - Class: 114
-      Script: {instanceID: 7340}
+      Script: {instanceID: 6150}
+    - Class: 114
+      Script: {instanceID: 6576}
+    - Class: 114
+      Script: {instanceID: 6870}
+    - Class: 114
+      Script: {instanceID: 7086}
+    - Class: 114
+      Script: {instanceID: 7510}
+    - Class: 114
+      Script: {instanceID: 7518}
+    - Class: 114
+      Script: {instanceID: 8900}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -682,6 +1061,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 0b7995e6c59201aa9b4ad6a0aecb4621
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 41ac98c9880a6f3758ca69dbaa1e7777
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -804,7 +1195,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 465b8eb9df4a84699830f4ab680d4f66
+      Hash: 5c2eacdd2108ffaf5c8ff3c1ff751cb5
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: AudioManager
@@ -826,12 +1217,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnBecameVisibleMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 2c179aa16ee509edeea256f0628e04cf
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: IntroGameController
   - hash:
       serializedVersion: 2
       Hash: 1bfcfbce150993e56fae19f40f3da27f
@@ -906,6 +1291,12 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
+      Hash: ee98e958090baf90c07a0b72fe2aac31
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: InkExample
+  - hash:
+      serializedVersion: 2
       Hash: 34fa63a30926bcf55d7323dae76be890
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -970,12 +1361,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Animation.Runtime
     namespaceName: UnityEngine.U2D.Animation
     className: Bone
-  - hash:
-      serializedVersion: 2
-      Hash: 0b7995e6c59201aa9b4ad6a0aecb4621
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: Button
   - hash:
       serializedVersion: 2
       Hash: 85000d725b3d59681683bd7467fe9099
@@ -1080,6 +1465,12 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 466180aabd0bc40a4ca8b08e5db3a92a
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BasicInkExample
+  - hash:
+      serializedVersion: 2
       Hash: a9340df851e094f0e1a209d8b81aaedc
     assemblyName: Unity.2D.Tilemap.Extras
     namespaceName: UnityEngine.Tilemaps
@@ -1132,6 +1523,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.SpriteShape.Runtime
     namespaceName: 
     className: SpriteShapeGeometryCache
+  - hash:
+      serializedVersion: 2
+      Hash: a21fdd7f399a6ea0dddaa63b8ec6f897
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: QuitGameOnKeypress
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1368,12 +1765,6 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
-      Hash: 41ac98c9880a6f3758ca69dbaa1e7777
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: HorizontalLayoutGroup
-  - hash:
-      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1396,6 +1787,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 1404ec1c870c0141415883f54faf0fd7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MainMenu
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1488,7 +1885,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: b8a1cb87b896c3b0cc70beaf3af6dbf5
+      Hash: c2731089effc4fe3eb5899968265a911
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: AudioSettings
@@ -1876,8 +2273,15 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: b7cff925707bc7b0c666e5c43e7a2abe
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: IntroGameController
   platform: 19
   scenePathNames:
-  - Assets/Scenes/Introduction/Intro.unity
+  - Assets/Scenes/Introduction/MainMenu.unity
+  - Assets/Scenes/Introduction/Game.unity
   playerPath: C:/Users/theja/git/SchoolProjects/Digital Media MA/StudioProject1/StudioProject1CLS/Studio
-    Project 1 CLS/Builds/WindowsBuilds/WindowsBuild02/Studio Project 1 CLS.exe
+    Project 1 CLS/Builds/WindowsBuilds/WindowsBuild07/Studio Project 1 CLS.exe

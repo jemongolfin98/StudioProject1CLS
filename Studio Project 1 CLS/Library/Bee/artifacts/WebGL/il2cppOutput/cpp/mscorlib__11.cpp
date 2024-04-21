@@ -4680,7 +4680,7 @@ IL_0049:
 		Type_t* L_19 = V_6;
 		RuntimeObject* L_20 = V_5;
 		bool L_21;
-		L_21 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(109, L_19, L_20);
+		L_21 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(110, L_19, L_20);
 		if (L_21)
 		{
 			goto IL_00b5;
@@ -7822,7 +7822,7 @@ IL_0014:
 		Assembly_t* L_3 = ___0_assem;
 		String_t* L_4 = ___1_name;
 		Type_t* L_5;
-		L_5 = VirtualFuncInvoker3< Type_t*, String_t*, bool, bool >::Invoke(20, L_3, L_4, (bool)0, (bool)0);
+		L_5 = VirtualFuncInvoker3< Type_t*, String_t*, bool, bool >::Invoke(21, L_3, L_4, (bool)0, (bool)0);
 		return L_5;
 	}
 }

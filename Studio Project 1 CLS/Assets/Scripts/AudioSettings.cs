@@ -7,11 +7,11 @@ using UnityEngine.SceneManagement;
 
 public class AudioSettings : MonoBehaviour
 {
-    private static readonly string BackgroundPref = "BackgroundPref";
+    private static readonly string BackgroundMusicPref = "BackgroundMusicPref";
     private static readonly string SoundEffectsPref = "SoundEffectsPref";
-    private float backgroundFloat, soundEffectsFloat;
-    public AudioSource[] backgroundAudio;
-    public AudioSource soundEffectsAudio;
+    private float backgroundMusicFloat, soundEffectsFloat;
+    public AudioSource[] backgroundMusicAudio;
+    public AudioSource[] soundEffectsAudio;
 
     private void Awake()
     {
@@ -20,14 +20,17 @@ public class AudioSettings : MonoBehaviour
 
     private void ContinueSettings()
     {
-        backgroundFloat = PlayerPrefs.GetFloat(BackgroundPref);
+        backgroundMusicFloat = PlayerPrefs.GetFloat(BackgroundMusicPref);
         soundEffectsFloat = PlayerPrefs.GetFloat(SoundEffectsPref);
 
-        for (int i = 0; i < backgroundAudio.Length; i++)
+        for (int i = 0; i < backgroundMusicAudio.Length; i++)
         {
-            backgroundAudio[i].volume = backgroundFloat;
+            backgroundMusicAudio[i].volume = backgroundMusicFloat;
         }
 
-        soundEffectsAudio.volume = soundEffectsFloat;
+        for (int j = 0; j < soundEffectsAudio.Length; j++)
+        {
+            soundEffectsAudio[j].volume = soundEffectsFloat;
+        }
     }
 }
