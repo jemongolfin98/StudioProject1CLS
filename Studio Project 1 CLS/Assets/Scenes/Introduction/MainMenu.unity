@@ -216,14 +216,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Kenton Toylor Howard
+  m_text: 'Kenton Taylor Howard
 
     Games and Interactive Media
 
     University
     of Central Florida
 
-    (Thesis Comittee Chair)
+    (Thesis Committee Chair)
 
 '
   m_isRightToLeft: 0
@@ -7255,7 +7255,7 @@ MonoBehaviour:
     of graduate-level university professors.\n\nART:\n+ Most game art assets (backgrounds,
     button art, icons, etc.) were originally created. \n\n+ Any non-originally created
     art assets were acquired through royalty-free and free-use licenses only.\n\nMUSIC:\n+
-    All game music (background busic and sound effects) was acquired through royalty-free
+    All game music (background music and sound effects) was acquired through royalty-free
     and free-use licenses only. Audio credits are provided if available.\n\nUSAGE
     OF AI:\n+ Most of the descriptions for player roles (Gender, Race, Job, Housing,
     Transportation, etc.) in the simulation were AI-generated utilizing ChatGPT 3.5
@@ -12818,7 +12818,7 @@ MonoBehaviour:
     University of Central Florida
 
     (Thesis
-    Comittee Member)
+    Committee Member)
 
 '
   m_isRightToLeft: 0

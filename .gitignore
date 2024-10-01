@@ -1,2 +1,8 @@
-Library\PackageCache\.gitignore
+*/PackageCache/*
+*/PackageCache*
+*PackageCache/*
+PackageCache
+/PackageCache/
+PackageCache/
+/PackageCache
 

@@ -26,10 +26,13 @@ Library\Bee\artifacts\mvdfrm\Unity.Mathematics.Editor.ref.dll_64944B6DD477E1FD.m
 Library\Bee\artifacts\mvdfrm\Unity.Mathematics.ref.dll_9B4CF66C9079F0F4.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.PlasticSCM.Editor.ref.dll_9B6D9940AFF80C3C.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Rider.Editor.ref.dll_BB682F4C994978A9.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Sysroot.Linux_x86_64.ref.dll_37DB98B07DDE4079.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.SysrootPackage.Editor.ref.dll_9E0122523FBA1972.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.TextMeshPro.Editor.ref.dll_E01181B6C057CE40.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.TextMeshPro.ref.dll_3701448EC0EF5C81.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Timeline.Editor.ref.dll_05875DFCD7CD8938.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Timeline.ref.dll_D34675E5055C5209.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Toolchain.Win-x86_64-Linux-x86_64.ref.dll_BCAA9FBF948D0DCE.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VSCode.Editor.ref.dll_CF19E61DDF16767F.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Core.Editor.ref.dll_83BC621B72BABDA3.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Core.ref.dll_EA71DBF61AC412EE.mvfrm
@@ -121,6 +124,12 @@ Library\Bee\artifacts\mvdfrm\UnityEngine.VideoModule.dll_ACEAA6100713C2C7.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.VRModule.dll_9F9FAB26A35EB774.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.WindModule.dll_6347063323191F10.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.XRModule.dll_D25E6E2B2C9904D2.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Android.Gradle.dll_D78D032F7D8C3D64.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Android.GradleProject.dll_0211414E663DB491.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Android.Types.dll_DB155B6C86B8F318.mvfrm
+Library\Bee\artifacts\mvdfrm\UnityEditor.iOS.Extensions.Xcode.dll_71BCE6ECAA77711A.mvfrm
+Library\Bee\artifacts\mvdfrm\UnityEditor.iOS.Extensions.Common.dll_17214DAA4D93BA81.mvfrm
+Library\Bee\artifacts\mvdfrm\UnityEditor.iOS.Extensions.Xcode.dll_1E19DBABADDB3C5B.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.WebGLModule.dll_EADC48F48D9D388B.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Collections.LowLevel.ILSupport.dll_2E40CE80E145E521.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Antlr3.Runtime.dll_DACAA631817C5F43.mvfrm
